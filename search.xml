@@ -4,33 +4,6 @@
   
     
     <entry>
-      <title>为你的博客安装上便携小空调</title>
-      <link href="//posts/d335.html"/>
-      <url>//posts/d335.html</url>
-      
-        <content type="html"><![CDATA[<p>给博客装上一个可交互的小空调组件，让页面多一点好玩的小细节。主题的乐趣不只在内容，也在这些会让人停留的小交互。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 生活日常 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 小空调 </tag>
-            
-            <tag> 生活 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>那些年用过的CSS奇妙用法之能用CSS就不用JS技巧系列</title>
       <link href="//posts/340b.html"/>
       <url>//posts/340b.html</url>
@@ -48,6 +21,8 @@
         <tags>
             
             <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
             
             <tag> css3 </tag>
             
@@ -76,8 +51,6 @@
             
             <tag> CDN </tag>
             
-            <tag> HTTPS </tag>
-            
         </tags>
       
     </entry>
@@ -101,9 +74,11 @@
       
         <tags>
             
-            <tag> Logo </tag>
-            
             <tag> AI </tag>
+            
+            <tag> 绘图 </tag>
+            
+            <tag> Logo </tag>
             
         </tags>
       
@@ -130,6 +105,8 @@
             
             <tag> AI </tag>
             
+            <tag> 绘图 </tag>
+            
             <tag> PS </tag>
             
         </tags>
@@ -155,9 +132,7 @@
       
         <tags>
             
-            <tag> CDN </tag>
-            
-            <tag> Cloudflare </tag>
+            <tag> 网络安全 </tag>
             
         </tags>
       
@@ -181,8 +156,6 @@
       
       
         <tags>
-            
-            <tag> CDN </tag>
             
             <tag> 网络安全 </tag>
             
@@ -247,9 +220,65 @@
     
     
     <entry>
-      <title>安知鱼主题标签 Tag Plugins</title>
+      <title>全新卡片式外链标签引入</title>
       <link href="//posts/39a9.html"/>
       <url>//posts/39a9.html</url>
+      
+        <content type="html"><![CDATA[<p>卡片式外链适合在文章中展示项目、工具和文档入口。它比普通链接更容易扫描，也能让内容层次更清晰。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐meting自建api</title>
+      <link href="//posts/a76e.html"/>
+      <url>//posts/a76e.html</url>
+      
+        <content type="html"><![CDATA[<p>当公共 API 不稳定时，自建服务可以减少不可控因素。音乐页面依赖接口时尤其需要关注可用性和缓存策略。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 音乐 </tag>
+            
+            <tag> meting </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安知鱼主题标签 Tag Plugins</title>
+      <link href="//posts/d50a.html"/>
+      <url>//posts/d50a.html</url>
       
         <content type="html"><![CDATA[<p>主题标签插件可以让 Markdown 内容呈现出更丰富的视觉层次，适合用在教程、文档和展示型文章里。</p>]]></content>
       
@@ -274,25 +303,25 @@
     
     
     <entry>
-      <title>音乐meting自建api</title>
-      <link href="//posts/a76e.html"/>
-      <url>//posts/a76e.html</url>
+      <title>hexo博客工作流CI（一键部署的快乐）</title>
+      <link href="//posts/b228.html"/>
+      <url>//posts/b228.html</url>
       
-        <content type="html"><![CDATA[<p>当公共 API 不稳定时，自建服务可以减少不可控因素。音乐页面依赖接口时尤其需要关注可用性和缓存策略。</p>]]></content>
+        <content type="html"><![CDATA[<p>在日常写博客的过程中，CI 可以把构建、生成和部署串起来。文章写完后提交代码，后续流程交给自动化处理。</p>]]></content>
       
       
       <categories>
           
-          <category> 生活日常 </category>
+          <category> 前端开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 音乐 </tag>
+            <tag> Hexo </tag>
             
-            <tag> meting </tag>
+            <tag> 工作流 </tag>
             
         </tags>
       
@@ -301,11 +330,65 @@
     
     
     <entry>
-      <title>hexo博客工作流CI（一键部署的快乐）</title>
-      <link href="//posts/b228.html"/>
-      <url>//posts/b228.html</url>
+      <title>给你的博客加一个优雅的音乐界面</title>
+      <link href="//posts/c3d3.html"/>
+      <url>//posts/c3d3.html</url>
       
-        <content type="html"><![CDATA[<p>在日常写博客的过程中，CI 可以把构建、生成和部署串起来。文章写完后提交代码，后续流程交给自动化处理。</p>]]></content>
+        <content type="html"><![CDATA[<p>很久之前就想把整个音乐界面好好写一写，不过一直迫于咕咕咕的属性没有去做这件事，以至于悔之不及，没有早点做，对我这种重度音乐控来说真的是太爽了，很快啊，马上就听了一下午。 前两天看到 叶子 重做了音乐界面于是马上就搞过来了啊，很快啊哈哈哈哈哈，谢谢大叶子的投喂！ 博主思路和叶子有所不同，每个人都有每个</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> aplayer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>操作系统复习题</title>
+      <link href="//posts/d4d2.html"/>
+      <url>//posts/d4d2.html</url>
+      
+        <content type="html"><![CDATA[<p>操作系统   选择题                               操作系统的最主要设计目标是（ ）。A．方便性和有效性 B．方便性和可扩展性C．有效性和可扩展性 D．有效性和开放性答：A有甲、乙两道算题，每道需执行 1 小时（其中处理器的工作时间为 12 分钟）。若它们在多道系统中执</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大学生涯 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 操作系统 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2022年度总结</title>
+      <link href="//posts/4c6a.html"/>
+      <url>//posts/4c6a.html</url>
+      
+        <content type="html"><![CDATA[<p>眨眼之间一年就过去了，这一年发生了好多好多的事情呐。多图流量警告。   在这一年里有试过在杭州剪过一次新发型。  关于工作今年年初继续上年在一家很棒的公司做着前端实习工作，虽然工资不高，只有 5k，不过在这里认识的人都特别好，以至于到现在也常有联系。  工位也很喜欢，每天来到办公室的第一件事就是开中</p>]]></content>
       
       
       <categories>
@@ -317,7 +400,1438 @@
       
         <tags>
             
-            <tag> 工作流 </tag>
+            <tag> 年度总结 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>[转载]还在用 JS 做节流吗？CSS 也可以防止按钮重复点击</title>
+      <link href="//posts/dd9.html"/>
+      <url>//posts/dd9.html</url>
+      
+        <content type="html"><![CDATA[<p>引用站外地址                                                        还在用 JS 做节流吗？CSS 也可以防止按钮重复点击              https:&#x2F;&#x2F;juejin.cn&#x2F;post&#x2F;7165828047520661534</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+            <tag> css3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>transform 支持单独赋值改变</title>
+      <link href="//posts/b019.html"/>
+      <url>//posts/b019.html</url>
+      
+        <content type="html"><![CDATA[<p>在掘金看到一篇文章      引用站外地址                                                        解放生产力！transform 支持单独赋值改变             https:&#x2F;&#x2F;juejin.cn&#x2F;post&#x2F;7152331836578</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+            <tag> css3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>css模糊羽化</title>
+      <link href="//posts/fd57.html"/>
+      <url>//posts/fd57.html</url>
+      
+        <content type="html"><![CDATA[<p>在逛 codepen 的时候发现一个有意思的 css 羽化项目      引用站外地址                                                        css羽化             css 羽化</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+            <tag> css3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>butterfly文章顶部添加波浪效果</title>
+      <link href="//posts/98c4.html"/>
+      <url>//posts/98c4.html</url>
+      
+        <content type="html"><![CDATA[<p>预览效果        魔改修改 themes&#x2F;butterfly&#x2F;layout&#x2F;includes&#x2F;header&#x2F;index.pug 大概第 33 行左右 123456789101112131415161718if top_img !&#x3D;&#x3D; false  if is_post()    include</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Chrome 发布新的 CSS 视口单位：svh、lvh、dvh！！！</title>
+      <link href="//posts/e644.html"/>
+      <url>//posts/e644.html</url>
+      
+        <content type="html"><![CDATA[<p>引用站外地址                                                        原文链接              The large， small， and dynamic viewport units</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> css3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>bilibili动态背景</title>
+      <link href="//posts/8d2b.html"/>
+      <url>//posts/8d2b.html</url>
+      
+        <content type="html"><![CDATA[<p>bilibili 动态背景 winter || autumn || spring，刷新随机顶部 cover，本篇不做教程，仅作为记录艰辛的过程 📝 本来集成成了好几个 pug 结果发现并不能结构化引入，最后还是变成了 js 操作，难受难受，果然写习惯了 vue， react 再回来就不熟练了  坎</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> bilibili动态背景 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>React组件之间的通信</title>
+      <link href="//posts/c939.html"/>
+      <url>//posts/c939.html</url>
+      
+        <content type="html"><![CDATA[<p>React 的组件相对于 Vue 更加的灵活和多样，按照不同的方式可以分成很多类组件：  根据组件的定义方式，可以分为：函数组件(Functional Component )和类组件(Class Component)； 根据组件内部是否有状态需要维护，可以分成：无状态组件(Stateless Co</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> React </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>为什么 react 的 setState 要设计成异步的</title>
+      <link href="//posts/6fd4.html"/>
+      <url>//posts/6fd4.html</url>
+      
+        <content type="html"><![CDATA[<p>在使用 React 的类组件时候我们常常会使用 setState 来更新状态，那么 setState 到底是同步的还是异步的呢？  1234changeMessage() &#123;  this.setState(&#123;message: &quot;你好哇, 安知鱼&quot;&#125;</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> React </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>butterfly控制特定图片懒加载</title>
+      <link href="//posts/192f.html"/>
+      <url>//posts/192f.html</url>
+      
+        <content type="html"><![CDATA[<p>经常看我博客的同学应该不难发现我的文章顶图偶尔进来以后还要等一会才能出现，还有加载动画的图片偶尔加载不出来，后来经过我一系列的排查发现居然是懒加载的缘故。  观察 network 选项卡可以发现我们需要让启动器改变，不让lazyload.iife.min.js来加载我们的顶图与加载动画的头像。 方案</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>为你的博客安装上便携小空调</title>
+      <link href="//posts/d335.html"/>
+      <url>//posts/d335.html</url>
+      
+        <content type="html"><![CDATA[<p>给博客装上一个可交互的小空调组件，让页面多一点好玩的小细节。主题的乐趣不只在内容，也在这些会让人停留的小交互。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小空调 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的图床方案</title>
+      <link href="//posts/2785.html"/>
+      <url>//posts/2785.html</url>
+      
+        <content type="html"><![CDATA[<p>自从写博客以来就一直面临着图床问题，各种各样的图片该存放在哪里，又该如何管理，在我经过不断的探索以后写下了这篇博客  初识图床图床图床，就是用来存放图片的温床，博客内有大量的图片，大量的地方需要使用到图片，优化博客加载方便管理的除了压缩图片的大小之外，首选就是多处使用图片链接，到不同的资源地址去进</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 图床 </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>butterfly魔改本地搜索预览图</title>
+      <link href="//posts/968f.html"/>
+      <url>//posts/968f.html</url>
+      
+        <content type="html"><![CDATA[<p>butterfly 自带的本地搜索配置方便所以便一直使用至今，不过有一个痛点就是没有搜索预览图，于是为了解决这个问题做了如下尝试。  安装1npm install hexo-generator-search –save  修改_config.yml, 添加以下内容 1234search:  pa</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决vite模块化打包</title>
+      <link href="//posts/1ed1.html"/>
+      <url>//posts/1ed1.html</url>
+      
+        <content type="html"><![CDATA[<p>在 vite 环境下开发时，默认是试用 ESM 打包，但是当我开发一个嵌入式应用就需要能做到闭包以防止变量冲突等问题，这个时候就要切换打包方式了，经过我不断的翻看文档，发现只需要在build.rollupOptions.output.format 配置iife即可，因为 vite 底层试用 roll</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>butterfly魔改aplayer音乐</title>
+      <link href="//posts/6c69.html"/>
+      <url>//posts/6c69.html</url>
+      
+        <content type="html"><![CDATA[<p>魔改有风险, 魔改前注意备份。此篇魔改需一定代码能力。   魔改效果预览     setTimeout(() &#x3D;&gt; {     var dogePlayer &#x3D; new DogePlayer({         container: document.getElementById(&quot;player_e</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>butterfly魔改关于页面</title>
+      <link href="//posts/e62b.html"/>
+      <url>//posts/e62b.html</url>
+      
+        <content type="html"><![CDATA[<p>点击查看参考站点                               参考方向教程原贴张洪 Heo张洪 Heo                              实际效果     引用站外地址</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决 元素隐式具有 &quot;any&quot; 类型，因为类型为 &quot;string&quot; 的表达式不能用于索引类型 &quot;Object&quot;。 在类型 &quot;Object&quot; 上找不到具有类型为 &quot;string&quot; 的参数的索引签名</title>
+      <link href="//posts/b590.html"/>
+      <url>//posts/b590.html</url>
+      
+        <content type="html"><![CDATA[<p>问题： 解决 元素隐式具有 “any” 类型，因为类型为 “string” 的表达式不能用于索引类型 “Object”。 在类型 “Object”上找不到具有类型为 “string” 的参数的索引签名 描述： 在写代码的时候，对一个对象做了一个 forEach 循环，然后取到了其每一个 key 对应</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>即刻短文（瀑布流）部署方案</title>
+      <link href="//posts/c248.html"/>
+      <url>//posts/c248.html</url>
+      
+        <content type="html"><![CDATA[<p>butterfly 即刻短文（瀑布流）部署方案。希望能给各位看客提供魔改思路。    todolist 支持度    图片灯箱 ✅   多图片多行显示 ✅   外部链接 ✅   瀑布流 ✅   首页滚动 ✅   快速评论 ✅   本地修改 yml 发布 ✅   aplayer 单曲音乐 ✅   插件</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Safari浏览器兼容正则表达式零宽断言</title>
+      <link href="//posts/4190.html"/>
+      <url>//posts/4190.html</url>
+      
+        <content type="html"><![CDATA[<p>最近在做关于界面的数据统计模块过程中要使用到正则表达式匹配 span 元素开头 和 p 标签结尾的字符  于是开心的下了如下正则表达式匹配这串数据 数据内容1<p>网站数据概况&lt;&#x2F;p&gt;<p><span>0&lt;&#x2F;span&gt;&lt;span&amp;gt</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开发日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue朝花夕拾04</title>
+      <link href="//posts/4a9f.html"/>
+      <url>//posts/4a9f.html</url>
+      
+        <content type="html"><![CDATA[<p>什么是响应式? 我们先来看一下响应式意味着什么?我们来看一段代码:  123let m &#x3D; 20;console.log(m);console.log(m * 2);  m 有一个初始化的值，有一段代码使用了这个值;那么在 m 有一个新的值时，这段代码可以自动重新执行;  上面的这样一种可以自动响应</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue朝花夕拾03</title>
+      <link href="//posts/88de.html"/>
+      <url>//posts/88de.html</url>
+      
+        <content type="html"><![CDATA[<p>v-model 的基本使用表单提交是开发中非常常见的功能，也是和用户交互的重要手段:  比如用户在登录、注册时需要提交账号密码; 比如用户在检索、创建、更新信息时，需要提交一些数据;  这些都要求我们可以在代码逻辑中获取到用户提交的数据，我们通常会使用 v-model 指令来完成:  v-model</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue朝花夕拾02</title>
+      <link href="//posts/495f.html"/>
+      <url>//posts/495f.html</url>
+      
+        <content type="html"><![CDATA[<p>复杂 data 的处理方式我们知道，在模板中可以直接通过插值语法显示一些data 中的数据。 但是在某些情况，我们可能需要对数据进行一些转化后再显示，或者需要将多个数据结合起来进行显示;  比如我们需要对多个 data 数据进行运算、三元运算符来决定结果、数据进行某种转化后显示; 在模板中使用表达式</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>鱼塘朋友圈部署前端方案</title>
+      <link href="//posts/3753.html"/>
+      <url>//posts/3753.html</url>
+      
+        <content type="html"><![CDATA[<p>一个好的博客当然需要有自己的鱼塘（坏笑）   点击查看参考站点                               参考方向参考站点洪哥鱼塘HEO                              鱼塘也就是朋友圈使用的项目是 hexo-circle-of-friends 后端部署</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vscode常用插件推荐</title>
+      <link href="//posts/aa50.html"/>
+      <url>//posts/aa50.html</url>
+      
+        <content type="html"><![CDATA[<p>工欲善其事，必先利其器。 vscode算是前端的利器了, 也有很大一部分人在使用 WebStorm , 我始终觉得它太大了于是与便弃用了。我相信 vscode 才会是前端开发工具的潮流 😭  在这里推荐几款vscode扩展插件是因为最近问的同学很多，并且给自己做一个记录。  Chinese (Si</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Heo同款loading动画</title>
+      <link href="//posts/52d8.html"/>
+      <url>//posts/52d8.html</url>
+      
+        <content type="html"><![CDATA[<p>原创HEO  点击查看参考教程                               参考方向教程原贴洪哥HEO                              昨天看到洪哥的加载动画很奇特，就只有一个头像，之前一直以为洪哥没有加载动画原来是加载太快看不到 效果预览本站 满屏与 pa</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>butterfly导航栏修改方案(自用方案)</title>
+      <link href="//posts/8e53.html"/>
+      <url>//posts/8e53.html</url>
+      
+        <content type="html"><![CDATA[<p>点击查看参考教程                               参考洪哥的导航栏修改而来。参考方向教程原贴heoheoleonus返回顶部 显示网页阅读进度                              注意 ⚠️ 该教程仅为博主目前使用的方法, 如需移植还需自行修改 j</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>给butterfly添加不一样的友链</title>
+      <link href="//posts/292d.html"/>
+      <url>//posts/292d.html</url>
+      
+        <content type="html"><![CDATA[<p>butterfly友链样式魔改, 一款满意的友链～</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue朝花夕拾01</title>
+      <link href="//posts/521a.html"/>
+      <url>//posts/521a.html</url>
+      
+        <content type="html"><![CDATA[<p>vue朝花夕拾（旧事重提）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mac上配置多个SSH</title>
+      <link href="//posts/443e.html"/>
+      <url>//posts/443e.html</url>
+      
+        <content type="html"><![CDATA[<p>Mac 上配置 SSH - 多个 SSH 进入 ssh 目录，查看目录12cd ~&#x2F;.sshls  ls 命令效果12config            id_rsa.pub        id_rsa_github.pub known_hosts.oldid_rsa            id_r</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>macOS 安装 Mysql 和 Navicat</title>
+      <link href="//posts/e8da.html"/>
+      <url>//posts/e8da.html</url>
+      
+        <content type="html"><![CDATA[<p>macOS 安装 Mysql 和 Navicat</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开发日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>给butterfly添加github贡献图(Gitcalendar)</title>
+      <link href="//posts/cf4f.html"/>
+      <url>//posts/cf4f.html</url>
+      
+        <content type="html"><![CDATA[<p>点击查看参考教程                               基于店长方案进行修改参考方向教程原贴店长原教程给hexo-theme-butterfly添加 Gitcalendar                              预览效果        安装 安装插件,在博</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>给butterfly添加侧边栏电子钟</title>
+      <link href="//posts/fc18.html"/>
+      <url>//posts/fc18.html</url>
+      
+        <content type="html"><![CDATA[<p>给butterfly添加侧边栏电子钟, 观察到自己位置的天气啦☁️</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>macbook pro 2021真实体验</title>
+      <link href="//posts/571d.html"/>
+      <url>//posts/571d.html</url>
+      
+        <content type="html"><![CDATA[<p>macbook pro 2021真实体验, 用了一个月</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分享 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>npm图床使用</title>
+      <link href="//posts/72ea.html"/>
+      <url>//posts/72ea.html</url>
+      
+        <content type="html"><![CDATA[<p>首先需要注册一个 npm 的账号。访问npm 注册页面  完成邮箱验证，注册完成后进入账号管理界面:头像-&gt;Account，拉倒最上方，你会看到You have not verified your email address字样的提示，点击以后按提示步骤验证你的邮箱。  找到我们之前创建的图</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用 Github Action 自动部署</title>
+      <link href="//posts/asdx.html"/>
+      <url>//posts/asdx.html</url>
+      
+        <content type="html"><![CDATA[<p>使用 Github Action 自动部署~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>目前可用cdn整理</title>
+      <link href="//posts/fe76.html"/>
+      <url>//posts/fe76.html</url>
+      
+        <content type="html"><![CDATA[<p>可用 npm 镜像jsDelivrhttps:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm unpkghttps:&#x2F;&#x2F;unpkg.com&#x2F; unpkg 自建https:&#x2F;&#x2F;cdn.cbd.int npm elementhttp:&#x2F;&#x2F;npm.elemecdn.com&#x2F; 初七云https:&#x2F;&#x2F;cdn.c</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cloudreve pdf预览偶尔出错修复方案</title>
+      <link href="//posts/b1d7.html"/>
+      <url>//posts/b1d7.html</url>
+      
+        <content type="html"><![CDATA[<p>完成此教程前请先完成前置教程      引用站外地址                                                        cloudreve魔改前置教程             cloudreve魔改前置教程</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cloudreve </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>butterfly 重装日记</title>
+      <link href="//posts/sdxhu.html"/>
+      <url>//posts/sdxhu.html</url>
+      
+        <content type="html"><![CDATA[<p>主题重装最重要的是先保留站点配置、文章 Front Matter 和数据文件，再逐步恢复功能开关。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cloudreve网盘魔改前置教程</title>
+      <link href="//posts/xoan.html"/>
+      <url>//posts/xoan.html</url>
+      
+        <content type="html"><![CDATA[<p>Cloudreve 是一款非常非常牛皮的网盘系统, Cloudreve 可以让您快速搭建起公私兼备的网盘系统。Cloudreve 在底层支持不同的云存储平台，用户在实际使用时无须关心物理存储方式。你可以使用 Cloudreve 搭建个人用网盘、文件分享系统，亦或是针对大小团体的公有云系统。 Clou</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cloudreve </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据结构复习题</title>
+      <link href="//posts/8645.html"/>
+      <url>//posts/8645.html</url>
+      
+        <content type="html"><![CDATA[<p>由于我实在是太菜了，于是就有了这篇文章，仅供参考，不说了，充电了~   数据结构  练习题一 选择题                               线性结构中数据元素之间是（ ）关系。A.一对多 B.多对多 C.多对一 D.一对一答：D数据结构中与所使用的计算机无关的是数据的（ ）结构</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大学生涯 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>彻底搞懂 HTTPS 的加密原理</title>
+      <link href="//posts/aa28.html"/>
+      <url>//posts/aa28.html</url>
+      
+        <content type="html"><![CDATA[<p>HTTPS（SSL&#x2F;TLS）的加密机制虽然是大家都应了解的基本知识，但网上很多相关文章总会忽略一些内容，没有阐明完整的逻辑脉络，我当年学习它的时候也废了挺大功夫。 对称与非对称加密、数字签名、数字证书等，在学习过程中，除了了解“它是什么”，你是否有想过“为什么是它”？我认为理解了后者才真正</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HTTPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>京东自动签到实现教程</title>
+      <link href="//posts/3830.html"/>
+      <url>//posts/3830.html</url>
+      
+        <content type="html"><![CDATA[<p>薅大厂的羊毛📈~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 薅羊毛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>完全搞懂this的指向</title>
+      <link href="//posts/222.html"/>
+      <url>//posts/222.html</url>
+      
+        <content type="html"><![CDATA[<p>在此感谢 coderwhy 老师，嘿嘿  this 是 JavaScript 中的一个关键字，但是又一个相对比较特别的关键字，不像 function、var、for、if 这些关键字一样，可以很清楚的搞清楚它到底是如何使用的。 this 会在执行上下文中绑定一个对象，但是是根据什么条件绑定的呢？在不</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端面试题（一）</title>
+      <link href="//posts/ff46.html"/>
+      <url>//posts/ff46.html</url>
+      
+        <content type="html"><![CDATA[<p>浏览器里，从用户输入 url 到用户看到页面结果的过程，发生了什么？  1、域名解析 域名解析的过程： （1）查询浏览器自身 DNS 缓存 （2）若上面没有找到，则搜索操作系统自身的 DNS 缓存 （3）若上面没有找到，则尝试读取 hosts 文件 （4）若上面没有找到，向本地配置的首选 DNS</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试经验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue面试题</title>
+      <link href="//posts/bd4e.html"/>
+      <url>//posts/bd4e.html</url>
+      
+        <content type="html"><![CDATA[<p>20 道常见的面试题 摘自 boss 直聘陈大鱼头  尽量减少 data 中的数据，data 中的数据都会增加 getter 和 setter，会收集对应的 watcher  从镜片的厚度和黄黑相见的格子衬衫我察觉到，面前坐着的这位面试官应该是来者不善。我像以往一样，准备花 3 分钟的时间进行自我介</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试经验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SASS学习</title>
+      <link href="//posts/8b43.html"/>
+      <url>//posts/8b43.html</url>
+      
+        <content type="html"><![CDATA[<p>在中大型页面里，Sass 可以用变量、嵌套、mixin 和模块化组织样式，减少重复并提升维护性。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>css中的字体</title>
+      <link href="//posts/fe37.html"/>
+      <url>//posts/fe37.html</url>
+      
+        <content type="html"><![CDATA[<p>生活明朗，万物可爱  字体相关的样式 字体相关的样式                               colorfont-sizefont-familycolor 用来设置字体颜色12345p &#123;  color: red;  color: #fff;  color: rgb(</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>less学习</title>
+      <link href="//posts/9ffb.html"/>
+      <url>//posts/9ffb.html</url>
+      
+        <content type="html"><![CDATA[<p>Less 的变量、嵌套和函数可以让样式代码更清晰。它适合在主题和组件库中沉淀公共视觉规则。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我要我们在一起</title>
+      <link href="//posts/9520.html"/>
+      <url>//posts/9520.html</url>
+      
+        <content type="html"><![CDATA[<p>偶然之间看到一篇帖子, 想到了现在我和某人，不知道后来的我们, 我们的十年会不会也变成这样 🌎  整理后的帖子相对完整，原文缺失部分 这是整理后的帖子 原文： https:&#x2F;&#x2F;<a href="http://www.douban.com&/#x2F;note&#x2F;260167887&#x2F">www.douban.com&#x2F;note&#x2F;260167887&amp;#x2F</a>; 原作者： 你这个贱人 原文地址：豆瓣：http:&#x2F;&#x2F;www.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>五一，武汉行</title>
+      <link href="//posts/7e87.html"/>
+      <url>//posts/7e87.html</url>
+      
+        <content type="html"><![CDATA[<p>武汉真是一个令人神往的城市🥰</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>console的高级用法</title>
+      <link href="//posts/3444.html"/>
+      <url>//posts/3444.html</url>
+      
+        <content type="html"><![CDATA[<p>前言 前几天在看青柠起始页的时候偶然间看到它的控制台居然可以这样 👊  于是就萌生了学一波 console 方法的念头，今天正好有时间就来把这几天的学习成果记录一下 😶  console 的基本用法1234567891011121314151617181920212223242526272829</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>弹性盒子</title>
+      <link href="//posts/eadb39c4.html"/>
+      <url>//posts/eadb39c4.html</url>
+      
+        <content type="html"><![CDATA[<p>弹性盒子适合处理一维布局。掌握主轴、交叉轴、换行和对齐规则之后，大多数组件排版都会变得直接。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML基础</title>
+      <link href="//posts/e173abca.html"/>
+      <url>//posts/e173abca.html</url>
+      
+        <content type="html"><![CDATA[<p>写好 HTML 不只是把元素摆出来，也包括语义、可访问性、链接结构和搜索引擎可读性。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo部署到腾讯云或阿里云</title>
+      <link href="//posts/ce6a.html"/>
+      <url>//posts/ce6a.html</url>
+      
+        <content type="html"><![CDATA[<p>部署环境与准备1.环境 本地 Windows10 操作系统 腾讯云 Cenots7.6 服务器 2.准备Hexo 本地博客 Xshell 链接到你的服务器 云服务器配置 Git 配置步骤                               1.安装依赖库1yum install curl-d</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阳光不燥，微风正好</title>
+      <link href="//posts/b8cf1317.html"/>
+      <url>//posts/b8cf1317.html</url>
+      
+        <content type="html"><![CDATA[<p>一个湖南信息学院学生的自白☀️</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用 Github Pages 和 Hexo 搭建自己的独立博客</title>
+      <link href="//posts/ddae.html"/>
+      <url>//posts/ddae.html</url>
+      
+        <content type="html"><![CDATA[<p>记录搭建博客的经历~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
             <tag> Hexo </tag>
             
