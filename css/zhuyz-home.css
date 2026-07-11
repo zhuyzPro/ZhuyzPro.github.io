@@ -14,16 +14,16 @@ body #home_top {
 }
 
 body #home_top .swiper_container_card {
-  align-items: stretch;
-  gap: 0;
+  align-items: flex-start;
 }
 
 body #random-banner {
-  min-height: 258px;
+  height: 76%;
+  min-height: 0;
 }
 
 body #random-banner .banners-title {
-  z-index: 2;
+  z-index: auto;
 }
 
 body #random-banner .banners-title-big {
@@ -32,6 +32,10 @@ body #random-banner .banners-title-big {
 
 body #random-banner #skills-tags-group-all {
   opacity: 1;
+}
+
+body #random-banner #random-hover {
+  z-index: 1;
 }
 
 body .topGroup .todayCard-cover {
