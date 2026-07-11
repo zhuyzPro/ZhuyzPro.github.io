@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>为你的博客安装上便携小空调</title>
+      <link href="//posts/d335.html"/>
+      <url>//posts/d335.html</url>
+      
+        <content type="html"><![CDATA[<p>给博客装上一个可交互的小空调组件，让页面多一点好玩的小细节。主题的乐趣不只在内容，也在这些会让人停留的小交互。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小空调 </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>那些年用过的CSS奇妙用法之能用CSS就不用JS技巧系列</title>
+      <link href="//posts/340b.html"/>
+      <url>//posts/340b.html</url>
+      
+        <content type="html"><![CDATA[<p>CSS 的能力远比想象中丰富。布局、动效、状态切换和视觉反馈，都可以通过更轻量的方式完成。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> css3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>什么是CDN？它解决了什么难题？国内CDN加Vercel，无服务器使用办法</title>
+      <link href="//posts/136a.html"/>
+      <url>//posts/136a.html</url>
+      
+        <content type="html"><![CDATA[<p>CDN 的核心价值是让用户就近访问内容，并把源站压力分散到边缘节点。对于静态博客，合理配置 CDN 能明显改善体验。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CDN </tag>
+            
+            <tag> HTTPS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>腾讯出品免费logo制作神器AI Logo,腾讯这次真的良心了</title>
+      <link href="//posts/8105.html"/>
+      <url>//posts/8105.html</url>
+      
+        <content type="html"><![CDATA[<p>AI 工具正在把低成本的视觉探索变成常态。对于个人项目，先快速生成方向，再做人工筛选和微调，是效率很高的流程。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 平面设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Logo </tag>
+            
+            <tag> AI </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>当AI加上PS后让我变的极为振奋(附mac安装ps beta25.0)教程</title>
+      <link href="//posts/4eb4.html"/>
+      <url>//posts/4eb4.html</url>
+      
+        <content type="html"><![CDATA[<p>生成式填充让设计软件从工具变成了协作伙伴。很多过去需要大量素材和时间的尝试，现在可以更快地完成初稿。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 平面设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> PS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CNAME解析至cf：分流解析cloudflare处理国外请求</title>
+      <link href="//posts/40fd.html"/>
+      <url>//posts/40fd.html</url>
+      
+        <content type="html"><![CDATA[<p>域名解析和 CDN 配置经常需要按地区拆分。合理使用 Cloudflare，可以把海外访问和国内访问分开处理。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CDN </tag>
+            
+            <tag> Cloudflare </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网络安全方向：10分钟2700w请求的攻击我是如何处理的</title>
+      <link href="//posts/dfb3.html"/>
+      <url>//posts/dfb3.html</url>
+      
+        <content type="html"><![CDATA[<p>面对短时间大量请求，首先要判断请求来源、请求路径和缓存命中情况，再决定封禁、限流还是转移。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CDN </tag>
+            
+            <tag> 网络安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通义万相上手体验</title>
+      <link href="//posts/2594.html"/>
+      <url>//posts/2594.html</url>
+      
+        <content type="html"><![CDATA[<p>通义万相的体验很适合快速生成视觉方案。它不一定替代创作，但能显著加快从想法到草稿的过程。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AI </tag>
+            
+            <tag> 绘图 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>html 属性Accesskey详细解析</title>
+      <link href="//posts/e140.html"/>
+      <url>//posts/e140.html</url>
+      
+        <content type="html"><![CDATA[<p>在 HTML 中，accesskey 可以给链接、按钮等元素配置快捷访问方式。对于需要高频操作的页面，它能改善键盘用户体验。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 开发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安知鱼主题标签 Tag Plugins</title>
+      <link href="//posts/39a9.html"/>
+      <url>//posts/39a9.html</url>
+      
+        <content type="html"><![CDATA[<p>主题标签插件可以让 Markdown 内容呈现出更丰富的视觉层次，适合用在教程、文档和展示型文章里。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Tag Plugins </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐meting自建api</title>
+      <link href="//posts/a76e.html"/>
+      <url>//posts/a76e.html</url>
+      
+        <content type="html"><![CDATA[<p>当公共 API 不稳定时，自建服务可以减少不可控因素。音乐页面依赖接口时尤其需要关注可用性和缓存策略。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 生活日常 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 音乐 </tag>
+            
+            <tag> meting </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo博客工作流CI（一键部署的快乐）</title>
+      <link href="//posts/b228.html"/>
+      <url>//posts/b228.html</url>
+      
+        <content type="html"><![CDATA[<p>在日常写博客的过程中，CI 可以把构建、生成和部署串起来。文章写完后提交代码，后续流程交给自动化处理。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 年度总结 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工作流 </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
