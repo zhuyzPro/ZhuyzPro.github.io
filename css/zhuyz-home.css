@@ -1,6 +1,6 @@
 /* Keep the local site visually aligned with the AnZhiYu demo homepage. */
 #page-header.not-top-img {
-  margin-bottom: 18px;
+  margin-bottom: 0;
 }
 
 #nav #site-name .title {
