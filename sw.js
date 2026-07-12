@@ -1,7 +1,7 @@
 "use strict";
 
 const CACHE_PREFIX = "AnZhiYuThemeCache";
-const CACHE_NAME = `${CACHE_PREFIX}-v20260712`;
+const CACHE_NAME = `${CACHE_PREFIX}-v20260712-2`;
 const LOCAL_HOST = "zhuyz.cloud";
 const LOCAL_NETWORK_FIRST_RE = /\.(js|css)$/i;
 const STATIC_ASSET_RE = /\.(woff2?|ttf|cur|png|jpe?g|svg|webp|gif|ico)$/i;
@@ -72,5 +72,10 @@ self.addEventListener("fetch", event => {
 
 self.addEventListener("message", event => {
   if (event.data !== "update") return;
-  event.source && event.source.postMessage({ type: "update", new: { global: "20260712", local: "20260712" }, list: null });
+  event.source &&
+    event.source.postMessage({
+      type: "update",
+      new: { global: "20260712-2", local: "20260712-2" },
+      list: ["/css/zhuyz-home.css?v=20260712-2"]
+    });
 });

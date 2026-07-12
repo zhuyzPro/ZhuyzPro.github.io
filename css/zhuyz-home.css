@@ -23,7 +23,9 @@ body #random-banner {
 }
 
 body #random-banner .banners-title {
-  z-index: auto;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 0;
 }
 
 body #random-banner .banners-title-big {
@@ -35,7 +37,15 @@ body #random-banner #skills-tags-group-all {
 }
 
 body #random-banner #random-hover {
-  z-index: 1;
+  z-index: 2;
+}
+
+body #random-banner:hover .banners-title {
+  opacity: 0;
+}
+
+body #random-banner:hover #random-hover {
+  background: var(--anzhiyu-theme) !important;
 }
 
 body .topGroup .todayCard-cover {
