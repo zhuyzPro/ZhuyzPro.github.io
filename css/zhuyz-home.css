@@ -52,8 +52,14 @@ body .topGroup .todayCard-cover {
   height: 100% !important;
 }
 
+body #nav-right #travellings_button,
+body #nav-right #randomPost_button,
+body #nav-right #search-button {
+  display: none !important;
+}
+
 body #categoryBar {
-  margin-top: 1.35rem;
+  margin-top: 0;
 }
 
 body #recent-posts > .recent-post-item {
