@@ -4,12 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!navigator.serviceWorker || !navigator.serviceWorker.controller) return;
 
   const updateKey = "updated";
-  const clearCacheNotice = () => {
-    caches.keys().then(keys => {
-      const cacheName = "AnZhiYuThemeCache";
-      if (keys.includes(cacheName)) caches.delete(cacheName);
-    });
-  };
+  const clearCacheNotice = () =>
+    caches
+      .keys()
+      .then(keys => Promise.all(keys.filter(key => key.startsWith("AnZhiYuThemeCache")).map(key => caches.delete(key))));
 
   if (sessionStorage.getItem(updateKey)) {
     clearCacheNotice();
@@ -21,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
   navigator.serviceWorker.addEventListener("message", function (event) {
     const data = event.data || {};
     sessionStorage.setItem(updateKey, data.type || "update");
-    if (data.list && data.list.some(url => /\.(js|css)$/.test(url))) location.reload();
-    else sessionStorage.removeItem(updateKey);
+    clearCacheNotice().then(() => {
+      if (data.list && data.list.some(url => /\.(js|css)$/.test(url))) location.reload();
+      else sessionStorage.removeItem(updateKey);
+    });
   });
 });
-
