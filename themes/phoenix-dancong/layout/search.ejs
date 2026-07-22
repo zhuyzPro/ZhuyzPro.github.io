@@ -1,0 +1,16 @@
+<section class="page-hero editorial-hero">
+  <p class="eyebrow">Search</p>
+  <h1><%= page.title %></h1>
+  <p><%= page.description %></p>
+</section>
+<section class="search-page">
+  <form class="search-panel" data-search-form role="search">
+    <label for="site-search-input">搜索关键词</label>
+    <div class="search-input-row">
+      <input id="site-search-input" name="q" type="search" autocomplete="off" placeholder="输入茶品、香型、产地或冲泡问题" data-search-input />
+      <button class="button primary" type="submit">搜索</button>
+    </div>
+    <p class="search-meta" data-search-meta>输入关键词开始搜索。</p>
+  </form>
+  <div class="search-results" data-search-results aria-live="polite"></div>
+</section>

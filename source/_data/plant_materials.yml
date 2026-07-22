@@ -1,0 +1,15 @@
+- id: qing-xin-wu-yi
+  name: 青心乌叶
+  status: published
+  type: 株系
+  note: 仅作为产品展示中的品种/株系字段，不据此推定香型或品质。
+- id: huang-dan
+  name: 黄旦
+  status: published
+  type: 品种
+  note: 用于黄枝香展示批次的受控字段。
+- id: song-zhong-no-1
+  name: 宋种一号
+  status: published
+  type: 株系
+  note: 用于银花香展示批次的资料字段。

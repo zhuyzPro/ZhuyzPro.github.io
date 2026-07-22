@@ -1,0 +1,36 @@
+consultation_types:
+  - id: general
+    label: 通用咨询
+    description: 香型选择、产地工艺、冲泡建议等基础咨询。
+  - id: product
+    label: 产品咨询
+    description: 针对某一款展示批次了解更多信息。
+  - id: brewing
+    label: 冲泡建议
+    description: 器具、水温、投茶量和逐泡时间。
+  - id: aroma
+    label: 香型科普
+    description: 蜜兰香、黄枝香、银花香等香型辨识。
+  - id: gift
+    label: 企业礼赠
+    description: 礼赠场景、包装与沟通安排。
+  - id: cooperation
+    label: 渠道合作
+    description: 品鉴活动、内容合作与长期采购沟通。
+
+wechat:
+  label: 微信咨询
+  id:
+  qrcode:
+  note: 官方微信号与二维码确认后展示，避免发布无效联系方式。
+
+phone:
+  label: 咨询电话
+  number:
+  hours:
+
+email:
+  label: 咨询邮箱
+  address: hello@zhuyz.cloud
+
+privacy_note: 访客主动联系后，由对应通信渠道处理沟通数据；本站不自建订单、会员或客户资料数据库，也不收集支付信息。

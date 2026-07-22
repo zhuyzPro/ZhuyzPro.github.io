@@ -1,0 +1,21 @@
+title: 凤凰单枞
+subtitle: 凤凰山茶事与香型图鉴
+description: 记录凤凰单枞茶品、香型、产地、工艺与冲泡方法的展示型品牌站。
+keywords: 凤凰单枞,凤凰单丛,潮州单枞,凤凰山,茶品图鉴,单枞香型,冲泡指南
+author: 凤凰单枞
+language: zh-CN
+timezone: Asia/Shanghai
+url: https://zhuyz.cloud
+root: /
+permalink: articles/:slug/
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+theme: phoenix-dancong
+archive_dir: archives
+category_dir: categories
+tag_dir: tags
+default_layout: page
+new_post_name: :title.md
+highlight:
+  enable: false

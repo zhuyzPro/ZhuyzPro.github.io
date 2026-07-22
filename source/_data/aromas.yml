@@ -1,0 +1,24 @@
+- id: mi-lan-xiang
+  name: 蜜兰香
+  status: published
+  profile: 花蜜香清晰，适合作为凤凰单枞入门时较容易识别的香气方向。
+  tags:
+    - 花蜜感
+    - 清扬
+    - 入口友好
+- id: huang-zhi-xiang
+  name: 黄枝香
+  status: published
+  profile: 香气偏清雅，适合用来展示香型、焙火和山场之间的差异。
+  tags:
+    - 清雅
+    - 花香
+    - 中火
+- id: yin-hua-xiang
+  name: 银花香
+  status: published
+  profile: 香气层次较细，适合承接冲泡建议和品鉴记录内容。
+  tags:
+    - 细腻
+    - 清甜
+    - 适合细泡

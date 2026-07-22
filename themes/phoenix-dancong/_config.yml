@@ -1,0 +1,104 @@
+brand:
+  name: 凤凰单枞
+  subtitle: 凤凰山茶事
+  mark: 凤
+  share_image: /images/hero-tea-table.png
+
+navigation:
+  - label: 茶品
+    url: /products/
+  - label: 香型
+    url: /aromas/
+  - label: 产地与工艺
+    url: /origins/
+  - label: 茶知识
+    url: /knowledge/
+  - label: 冲泡
+    url: /brewing/
+  - label: 联系
+    url: /contact/
+
+quick_actions:
+  search: /search/
+
+home:
+  hero:
+    eyebrow: 潮州凤凰山 · 单枞茶事
+    title: 凤凰单枞
+    copy: 从一泡茶的香气、山场与工艺出发，认识真实批次，也理解它为什么呈现这样的滋味。
+    image: /images/hero-tea-table.png
+    ctas:
+      - label: 浏览茶品图鉴
+        url: /products/
+        style: primary
+      - label: 从香型开始
+        url: /aromas/
+        style: secondary
+    notes:
+      - 真实批次
+      - 香型脉络
+      - 产地工艺
+  pathways:
+    - kicker: Tea Collection
+      title: 茶品图鉴
+      desc: 从香型、焙火与汤感了解每个展示批次。
+      url: /products/
+    - kicker: Aroma Notes
+      title: 香型百科
+      desc: 用清楚的感官线索认识蜜兰香、黄枝香与银花香。
+      url: /aromas/
+    - kicker: Terroir & Craft
+      title: 产地工艺
+      desc: 分开说明行政产地、公开山场与采制记录。
+      url: /origins/
+    - kicker: Brewing Guide
+      title: 冲泡指南
+      desc: 按器具、投茶量、水温和逐泡时间给出建议。
+      url: /brewing/
+  sections:
+    products:
+      eyebrow: Tea Collection
+      title: 从香型开始，认识每一泡的差异
+      copy: 茶品按真实展示批次整理，不用价格和销量替代产品信息。
+      link_label: 查看全部茶品
+      link_url: /products/
+    aromas:
+      eyebrow: Aroma Library
+      title: 香气不是标签，而是一条理解茶的路径
+      copy: 香型帮助建立第一层感官坐标；具体表现仍需回到批次、山场、工艺与冲泡。
+      link_label: 进入香型百科
+      link_url: /aromas/
+    origin:
+      eyebrow: Origin & Craft
+      title: 一片叶子，从凤凰山到杯中
+      copy: 产地决定生长背景，采制塑造香气与汤感。本站把山场、工艺和批次记录分开呈现，让信息更容易核验。
+      image: /images/origin-mountain.png
+      link_label: 阅读产地与工艺
+      link_url: /origins/
+    brewing:
+      eyebrow: Brewing
+      title: 先从稳定参数开始，再根据一泡茶调整
+      copy: 盖碗、投茶量、水温和出汤节奏共同决定茶汤表现。
+      link_label: 查看完整冲泡指南
+      link_url: /brewing/
+    posts:
+      eyebrow: Tea Journal
+      title: 茶知识与品饮记录
+      copy: 用文章展开香型、批次、工艺与日常冲泡中的具体问题。
+      link_label: 阅读全部文章
+      link_url: /knowledge/
+  contact:
+    eyebrow: Personal Consultation
+    title: 不确定从哪款开始，可以先说说你的口味
+    copy: 告诉我们常喝的茶、偏好的香气和日常使用的器具，人工咨询会据此提供更具体的阅读与品饮建议。
+    button: 联系咨询
+
+footer:
+  note: 凤凰单枞茶品、香型、产地工艺与冲泡知识展示。本站不提供在线支付、下单或会员服务。
+  links:
+    - label: 茶品图鉴
+      url: /products/
+    - label: 茶知识
+      url: /knowledge/
+    - label: 联系咨询
+      url: /contact/

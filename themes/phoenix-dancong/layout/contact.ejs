@@ -1,0 +1,43 @@
+<% const contact = site.data.contact || {}; %>
+<% const topics = consultation_topics(); %>
+<section class="page-hero editorial-hero">
+  <p class="eyebrow">Personal Consultation</p>
+  <h1><%= page.title %></h1>
+  <p><%= page.description %></p>
+</section>
+<section class="contact-layout">
+  <div class="contact-topic-card">
+    <p class="eyebrow">当前咨询主题</p>
+    <script type="application/json" id="consultation-topic-data"><%- JSON.stringify(topics).replace(/</g, "\\u003c") %></script>
+    <p class="topic-output" data-contact-topic aria-live="polite">咨询编号：general</p>
+    <button class="button primary" type="button" data-copy-topic>复制咨询编号</button>
+    <span class="copy-status" data-copy-topic-status aria-live="polite"></span>
+    <div class="prose">
+      <%- page.content %>
+    </div>
+  </div>
+  <div class="contact-cards">
+    <article>
+      <p class="tag">Email</p>
+      <h2><%= contact.email && contact.email.label %></h2>
+      <% if (contact.email && contact.email.address) { %>
+        <a class="contact-value contact-email" data-contact-email data-email="<%= contact.email.address %>" href="mailto:<%= contact.email.address %>"><%= contact.email.address %></a>
+        <p>邮件主题会自动带入当前咨询编号。</p>
+      <% } %>
+    </article>
+    <article>
+      <p class="tag">WeChat</p>
+      <h2><%= contact.wechat && contact.wechat.label %></h2>
+      <% if (contact.wechat && contact.wechat.qrcode) { %>
+        <img class="wechat-qr" src="<%- url_for(contact.wechat.qrcode) %>" alt="官方微信二维码" />
+      <% } %>
+      <% if (contact.wechat && contact.wechat.id) { %><p>微信号：<strong><%= contact.wechat.id %></strong></p><% } %>
+      <p><%= contact.wechat && contact.wechat.note %></p>
+    </article>
+    <article class="contact-wide-card">
+      <p class="tag">Privacy</p>
+      <h2>隐私与边界</h2>
+      <p><%= contact.privacy_note %></p>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+- id: batch-milan-2026
+  title: 2026 春茶蜜兰香展示批次记录
+  type: batch
+  summary: 采制时间、干茶、汤色、品鉴记录和复核日期的内部资料。
+- id: batch-huangzhi-2026
+  title: 2026 春茶黄枝香展示批次记录
+  type: batch
+  summary: 采制批次、焙火记录和试茶记录的内部资料。
+- id: batch-yinhua-2026
+  title: 2026 春茶银花香展示批次记录
+  type: batch
+  summary: 批次品鉴、冲泡参数和包装保存建议的内部资料。
+- id: origin-fenghuangzhen
+  title: 凤凰镇行政产地与山场公开资料
+  type: origin
+  summary: 用于前台解释行政产地、片区展示和资料引用边界。
+- id: brewing-guide-2026
+  title: 2026 凤凰单枞冲泡建议内部稿
+  type: brewing
+  summary: 盖碗冲泡参数、逐泡时间和口感调整建议。

@@ -1,0 +1,42 @@
+<% const isHome = page.layout === 'index' || page.path === 'index.html'; %>
+<% const seoTitle = isHome ? `${config.title} | ${config.subtitle}` : `${page.title || config.title} | ${config.title}`; %>
+<% const seoDescription = (page.description || config.description || '').trim(); %>
+<% const shareImage = (page.cover && page.cover.src) || (theme.brand && theme.brand.share_image) || ''; %>
+<% const noindex = page.noindex === true || page.layout === 'search' || page.layout === '404'; %>
+<% const canonicalPath = isHome ? '' : String(page.path || '').replace(/index\.html$/, ''); %>
+<% const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: config.title,
+  description: config.description,
+  url: config.url,
+  inLanguage: config.language || 'zh-CN'
+}; %>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title><%= seoTitle %></title>
+<meta name="description" content="<%= seoDescription %>" />
+<meta name="keywords" content="<%= config.keywords %>" />
+<meta name="author" content="<%= config.author %>" />
+<% if (noindex) { %><meta name="robots" content="noindex,follow" /><% } %>
+<link rel="canonical" href="<%= full_url_for(canonicalPath) %>" />
+<meta property="og:type" content="<%= page.layout === 'post' ? 'article' : 'website' %>" />
+<meta property="og:title" content="<%= seoTitle %>" />
+<meta property="og:description" content="<%= seoDescription %>" />
+<meta property="og:url" content="<%= full_url_for(canonicalPath) %>" />
+<meta property="og:locale" content="zh_CN" />
+<% if (shareImage) { %><meta property="og:image" content="<%= full_url_for(String(shareImage).replace(/^\/+/, '')) %>" /><% } %>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#f4f2eb" />
+<script type="application/ld+json"><%- JSON.stringify(websiteSchema).replace(/</g, "\\u003c") %></script>
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem("phoenix-dancong-theme");
+      if (saved === "dark" || saved === "light") {
+        document.documentElement.dataset.theme = saved;
+      }
+    } catch (error) {}
+  })();
+</script>
+<link rel="stylesheet" href="<%- url_for('css/main.css') %>" />

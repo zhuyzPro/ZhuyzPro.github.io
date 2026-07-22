@@ -1,0 +1,101 @@
+<% const aroma = page.taxonomy && find_aroma(page.taxonomy.aroma_id); %>
+<% const origin = page.origin && find_origin(page.origin.origin_id); %>
+<% const site = page.origin && find_site(page.origin.site_id); %>
+<% const plant = page.taxonomy && find_plant_material(page.taxonomy.plant_material_id); %>
+<% const references = resolve_references(page.trust && page.trust.source_ids); %>
+<% const productTopic = `product-${page.product_id}`; %>
+<% const brewingTopic = `brewing-${page.product_id}`; %>
+<% const topic = page.consultation && page.consultation.topic ? page.consultation.topic : productTopic; %>
+<% const contactHref = `${url_for('/contact/')}?topic=${encodeURIComponent(topic)}`; %>
+<% const brewingHref = `${url_for('/contact/')}?topic=${encodeURIComponent(brewingTopic)}`; %>
+<article class="product-page">
+  <header class="product-hero">
+    <div class="product-hero-copy">
+      <p class="eyebrow"><%= page.series %> · <%= aroma ? aroma.name : '凤凰单枞' %></p>
+      <h1><%= page.title %></h1>
+      <p><%= page.summary %></p>
+      <dl class="product-hero-meta">
+        <div><dt>公开产地</dt><dd><%= site ? site.name : (origin ? origin.name : '待复核') %></dd></div>
+        <div><dt>焙火表达</dt><dd><%= page.craft && page.craft.roast_label %></dd></div>
+      </dl>
+      <div class="hero-actions">
+        <a class="button primary" href="<%- contactHref %>">咨询这款茶</a>
+        <a class="button secondary" href="<%- brewingHref %>">获取冲泡建议</a>
+      </div>
+    </div>
+    <figure>
+      <img src="<%- url_for(page.cover.src) %>" alt="<%= page.cover.alt %>" />
+    </figure>
+  </header>
+
+  <section class="product-facts">
+    <dl><dt>展示批次</dt><dd><%= page.product_id %></dd></dl>
+    <dl><dt>香型</dt><dd><%= aroma ? aroma.name : '待复核' %></dd></dl>
+    <dl><dt>品种/株系</dt><dd><%= plant ? plant.name : '待复核' %></dd></dl>
+    <dl><dt>行政产地</dt><dd><%= origin ? origin.name : '待复核' %></dd></dl>
+    <dl><dt>公开片区</dt><dd><%= site ? site.name : '待复核' %></dd></dl>
+    <dl><dt>焙火</dt><dd><%= page.craft && page.craft.roast_label %></dd></dl>
+  </section>
+
+  <% if (page.gallery && page.gallery.length) { %>
+    <section class="gallery-strip" aria-label="产品图片">
+      <% page.gallery.forEach((item) => { %>
+        <img src="<%- url_for(item.src) %>" alt="<%= item.alt || page.title %>" />
+      <% }); %>
+    </section>
+  <% } %>
+
+  <div class="product-layout">
+    <div class="prose">
+      <%- page.content %>
+    </div>
+    <aside class="product-sidebar">
+      <section>
+        <p class="tag">Sensory Notes</p>
+        <h2>本批次品鉴</h2>
+        <dl>
+          <div><dt>干茶</dt><dd><%= page.sensory && page.sensory.dry_leaf %></dd></div>
+          <div><dt>汤色</dt><dd><%= page.sensory && page.sensory.liquor %></dd></div>
+          <div><dt>滋味</dt><dd><%= page.sensory && page.sensory.taste %></dd></div>
+        </dl>
+      </section>
+      <section>
+        <p class="tag">Brewing</p>
+        <h2>冲泡参数</h2>
+        <dl>
+          <div><dt>器具</dt><dd><%= page.brewing && page.brewing.vessel %></dd></div>
+          <div><dt>投茶</dt><dd><%= page.brewing && page.brewing.leaf_weight %></dd></div>
+          <div><dt>水温</dt><dd><%= page.brewing && page.brewing.water %></dd></div>
+          <div><dt>时间</dt><dd><%= page.brewing && page.brewing.timing %></dd></div>
+        </dl>
+      </section>
+    </aside>
+  </div>
+
+  <% if (references.length) { %>
+    <section class="section-block references-block">
+      <div class="section-title">
+        <p class="eyebrow">资料依据</p>
+        <h2>本页使用的资料记录</h2>
+      </div>
+      <div class="reference-grid">
+        <% references.forEach((ref) => { %>
+          <article>
+            <p class="tag"><%= ref.type %></p>
+            <h3><%= ref.title %></h3>
+            <p><%= ref.summary %></p>
+          </article>
+        <% }); %>
+      </div>
+    </section>
+  <% } %>
+
+  <section class="consult-band">
+    <div>
+      <p class="eyebrow">Batch Consultation</p>
+      <h2>咨询时请带上批次编号</h2>
+      <p>编号 <strong><%= page.product_id %></strong> 用于定位当前页面与冲泡建议，不代表订单、库存或交易状态。</p>
+    </div>
+    <a class="button light" href="<%- contactHref %>">带编号咨询</a>
+  </section>
+</article>

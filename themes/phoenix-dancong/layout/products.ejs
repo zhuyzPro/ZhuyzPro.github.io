@@ -1,0 +1,17 @@
+<% const products = published_products(); %>
+<section class="page-hero editorial-hero">
+  <p class="eyebrow">Tea Collection</p>
+  <h1><%= page.title %></h1>
+  <p><%= page.description %></p>
+</section>
+<section class="section-block section-contained">
+  <header class="catalog-note">
+    <p>当前收录 <strong><%= products.length %></strong> 个展示批次</p>
+    <span>按人工维护优先级与更新时间排列</span>
+  </header>
+  <div class="card-grid product-index-grid">
+    <% products.forEach((product) => { %>
+      <%- partial('_partial/product-card', { product: product }) %>
+    <% }); %>
+  </div>
+</section>

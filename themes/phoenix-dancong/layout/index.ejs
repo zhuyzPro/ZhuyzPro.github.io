@@ -1,0 +1,140 @@
+<% const hero = theme.home.hero || {}; %>
+<% const products = published_products(); %>
+<% const posts = published_posts(); %>
+<% const aromas = (site.data.aromas || []).filter((item) => item.status === 'published'); %>
+<div class="home-page">
+  <section class="home-hero" aria-labelledby="home-title">
+    <img class="home-hero-image" src="<%- url_for(hero.image) %>" alt="凤凰单枞茶席与茶汤" />
+    <div class="home-hero-shade" aria-hidden="true"></div>
+    <div class="home-hero-inner">
+      <div class="home-hero-copy">
+        <p class="eyebrow"><%= hero.eyebrow %></p>
+        <h1 id="home-title"><%= hero.title %></h1>
+        <p class="home-hero-lead"><%= hero.copy %></p>
+        <div class="hero-actions">
+          <% (hero.ctas || []).forEach((cta) => { %>
+            <a class="button <%= cta.style === 'secondary' ? 'secondary' : 'primary' %>" href="<%- url_for(cta.url) %>"><%= cta.label %></a>
+          <% }); %>
+        </div>
+        <ul class="hero-notes" aria-label="站点内容重点">
+          <% (hero.notes || []).forEach((note) => { %>
+            <li><%= note %></li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <nav class="home-pathways" aria-label="站点主要内容">
+    <% (theme.home.pathways || []).forEach((item, index) => { %>
+      <a href="<%- url_for(item.url) %>">
+        <span class="pathway-number"><%= String(index + 1).padStart(2, '0') %></span>
+        <span class="pathway-copy">
+          <small><%= item.kicker %></small>
+          <strong><%= item.title %></strong>
+          <em><%= item.desc %></em>
+        </span>
+        <span class="pathway-arrow" aria-hidden="true">→</span>
+      </a>
+    <% }); %>
+  </nav>
+
+  <section class="section-block home-section">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow"><%= theme.home.sections.products.eyebrow %></p>
+        <h2><%= theme.home.sections.products.title %></h2>
+        <p><%= theme.home.sections.products.copy %></p>
+      </div>
+      <a class="text-link" href="<%- url_for(theme.home.sections.products.link_url) %>"><%= theme.home.sections.products.link_label %><span aria-hidden="true">→</span></a>
+    </header>
+    <div class="card-grid product-index-grid">
+      <% products.slice(0, 3).forEach((product) => { %>
+        <%- partial('_partial/product-card', { product: product }) %>
+      <% }); %>
+    </div>
+  </section>
+
+  <section class="home-aroma-band">
+    <div class="home-band-inner">
+      <header class="section-heading section-heading-light">
+        <div>
+          <p class="eyebrow"><%= theme.home.sections.aromas.eyebrow %></p>
+          <h2><%= theme.home.sections.aromas.title %></h2>
+          <p><%= theme.home.sections.aromas.copy %></p>
+        </div>
+        <a class="text-link" href="<%- url_for(theme.home.sections.aromas.link_url) %>"><%= theme.home.sections.aromas.link_label %><span aria-hidden="true">→</span></a>
+      </header>
+      <div class="aroma-preview-grid">
+        <% aromas.slice(0, 3).forEach((aroma, index) => { %>
+          <a class="aroma-preview" href="<%- url_for(`/aromas/#${aroma.id}`) %>">
+            <span class="aroma-index"><%= String(index + 1).padStart(2, '0') %></span>
+            <h3><%= aroma.name %></h3>
+            <p><%= aroma.profile %></p>
+            <span class="aroma-tags"><%= (aroma.tags || []).join(' · ') %></span>
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <section class="origin-feature">
+    <figure>
+      <img src="<%- url_for(theme.home.sections.origin.image) %>" alt="凤凰山产地与茶园环境" />
+    </figure>
+    <div class="origin-feature-copy">
+      <p class="eyebrow"><%= theme.home.sections.origin.eyebrow %></p>
+      <h2><%= theme.home.sections.origin.title %></h2>
+      <p><%= theme.home.sections.origin.copy %></p>
+      <ol class="process-inline" aria-label="凤凰单枞主要采制环节">
+        <% (site.data.process || []).slice(0, 5).forEach((step, index) => { %>
+          <li><span><%= String(index + 1).padStart(2, '0') %></span><%= step.name %></li>
+        <% }); %>
+      </ol>
+      <a class="button outline" href="<%- url_for(theme.home.sections.origin.link_url) %>"><%= theme.home.sections.origin.link_label %></a>
+    </div>
+  </section>
+
+  <section class="brewing-overview">
+    <header>
+      <p class="eyebrow"><%= theme.home.sections.brewing.eyebrow %></p>
+      <h2><%= theme.home.sections.brewing.title %></h2>
+      <p><%= theme.home.sections.brewing.copy %></p>
+      <a class="text-link" href="<%- url_for(theme.home.sections.brewing.link_url) %>"><%= theme.home.sections.brewing.link_label %><span aria-hidden="true">→</span></a>
+    </header>
+    <dl class="brewing-quick-grid">
+      <% ((site.data.brewing && site.data.brewing.quick) || []).forEach((item) => { %>
+        <div>
+          <dt><%= item.label %></dt>
+          <dd><%= item.value %></dd>
+          <p><%= item.note %></p>
+        </div>
+      <% }); %>
+    </dl>
+  </section>
+
+  <section class="section-block home-section">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow"><%= theme.home.sections.posts.eyebrow %></p>
+        <h2><%= theme.home.sections.posts.title %></h2>
+        <p><%= theme.home.sections.posts.copy %></p>
+      </div>
+      <a class="text-link" href="<%- url_for(theme.home.sections.posts.link_url) %>"><%= theme.home.sections.posts.link_label %><span aria-hidden="true">→</span></a>
+    </header>
+    <div class="post-list">
+      <% posts.slice(0, 3).forEach((post) => { %>
+        <%- partial('_partial/post-card', { post: post }) %>
+      <% }); %>
+    </div>
+  </section>
+
+  <section class="consult-band">
+    <div>
+      <p class="eyebrow"><%= theme.home.contact.eyebrow %></p>
+      <h2><%= theme.home.contact.title %></h2>
+      <p><%= theme.home.contact.copy %></p>
+    </div>
+    <a class="button light" href="<%- url_for('/contact/') %>"><%= theme.home.contact.button %></a>
+  </section>
+</div>

@@ -1,0 +1,19 @@
+<% const aroma = product.taxonomy && find_aroma(product.taxonomy.aroma_id); %>
+<% const origin = product.origin && find_origin(product.origin.origin_id); %>
+<article class="product-card">
+  <a class="product-card-link" href="<%- url_for(product.path) %>">
+    <% if (product.cover && product.cover.src) { %>
+      <img src="<%- url_for(product.cover.src) %>" alt="<%= product.cover.alt || product.title %>" />
+    <% } %>
+    <div class="product-card-body">
+      <p class="tag"><%= aroma ? aroma.name : '凤凰单枞' %> · <%= product.craft && product.craft.roast_label ? product.craft.roast_label : product.display_status %></p>
+      <h3><%= product.title %></h3>
+      <p><%= product.summary || product.description || '' %></p>
+      <dl>
+        <div><dt>展示批次</dt><dd><%= product.product_id %></dd></div>
+        <div><dt>产地</dt><dd><%= origin ? origin.town || origin.name : '待复核' %></dd></div>
+      </dl>
+      <span class="card-action">查看茶品详情 <span aria-hidden="true">→</span></span>
+    </div>
+  </a>
+</article>

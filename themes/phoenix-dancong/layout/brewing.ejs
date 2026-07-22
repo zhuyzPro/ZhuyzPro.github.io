@@ -1,0 +1,51 @@
+<% const brewing = site.data.brewing || {}; %>
+<section class="page-hero editorial-hero">
+  <p class="eyebrow">Brewing Guide</p>
+  <h1><%= page.title %></h1>
+  <p><%= page.description %></p>
+</section>
+
+<section class="brewing-guide section-contained">
+  <dl class="brewing-quick-grid brewing-quick-large">
+    <% (brewing.quick || []).forEach((item) => { %>
+      <div>
+        <dt><%= item.label %></dt>
+        <dd><%= item.value %></dd>
+        <p><%= item.note %></p>
+      </div>
+    <% }); %>
+  </dl>
+
+  <div class="prose">
+    <%- page.content %>
+  </div>
+
+  <ol class="brewing-steps">
+    <% (brewing.steps || []).forEach((step, index) => { %>
+      <li>
+        <span><%= String(index + 1).padStart(2, '0') %></span>
+        <div>
+          <h2><%= step.title %></h2>
+          <p><%= step.note %></p>
+        </div>
+      </li>
+    <% }); %>
+  </ol>
+
+  <section class="adjustment-section">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow">Adjustments</p>
+        <h2>根据茶汤表现做调整</h2>
+      </div>
+    </header>
+    <div class="adjustment-grid">
+      <% (brewing.adjustments || []).forEach((item) => { %>
+        <article>
+          <h3><%= item.title %></h3>
+          <p><%= item.note %></p>
+        </article>
+      <% }); %>
+    </div>
+  </section>
+</section>

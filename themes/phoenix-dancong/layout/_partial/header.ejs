@@ -1,0 +1,26 @@
+<header class="site-header">
+  <a class="brand" href="<%- url_for('/') %>" aria-label="<%= theme.brand.name %>首页">
+    <span class="brand-mark"><%= theme.brand.mark %></span>
+    <span>
+      <strong><%= theme.brand.name %></strong>
+      <small><%= theme.brand.subtitle %></small>
+    </span>
+  </a>
+  <nav class="site-nav" id="site-navigation" aria-label="主导航">
+    <% (theme.navigation || []).forEach((item) => { %>
+      <% const isActive = page.path && page.path.startsWith(String(item.url).replace(/^\/|\/$/g, '')); %>
+      <a class="<%= isActive ? 'is-active' : '' %>" href="<%- url_for(item.url) %>"><%= item.label %></a>
+    <% }); %>
+  </nav>
+  <div class="header-actions">
+    <a class="icon-button" href="<%- url_for(theme.quick_actions.search) %>" aria-label="站内搜索">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.8 4a6.8 6.8 0 0 1 5.38 10.95l3.94 3.93-1.42 1.42-3.93-3.94A6.8 6.8 0 1 1 10.8 4Zm0 2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6Z"/></svg>
+    </a>
+    <button class="icon-button" type="button" data-theme-toggle aria-label="切换明暗模式">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Zm0 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm9-7a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2h2ZM5 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h2Zm12.95-6.36a1 1 0 0 1 1.41 1.41l-1.41 1.42a1 1 0 1 1-1.42-1.42l1.42-1.41ZM6.05 16.53a1 1 0 0 1 1.42 1.42l-1.42 1.41a1 1 0 0 1-1.41-1.41l1.41-1.42Zm13.31 1.42a1 1 0 0 1-1.41 1.41l-1.42-1.41a1 1 0 0 1 1.42-1.42l1.41 1.42ZM7.47 6.05a1 1 0 0 1-1.42 1.42L4.64 6.05a1 1 0 0 1 1.41-1.41l1.42 1.41Z"/></svg>
+    </button>
+    <button class="icon-button nav-toggle" type="button" data-nav-toggle aria-controls="site-navigation" aria-expanded="false" aria-label="展开主导航">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

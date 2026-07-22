@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="<%= config.language || 'zh-CN' %>" data-theme="light">
+  <head>
+    <%- partial('_partial/head') %>
+  </head>
+  <body class="layout-<%= page.layout || 'page' %>">
+    <%- partial('_partial/header') %>
+    <main id="main-content" class="site-main">
+      <%- body %>
+    </main>
+    <%- partial('_partial/footer') %>
+    <%- js('js/main.js') %>
+    <% if (page.layout === 'contact') { %><%- js('js/contact.js') %><% } %>
+    <% if (page.layout === 'search') { %><%- js('js/search.js') %><% } %>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<% const aromas = (site.data.aromas || []).filter((item) => item.status === 'published'); %>
+<% const products = published_products(); %>
+<section class="page-hero editorial-hero">
+  <p class="eyebrow">Aroma Library</p>
+  <h1><%= page.title %></h1>
+  <p><%= page.description %></p>
+</section>
+
+<section class="taxonomy-intro">
+  <div class="prose">
+    <%- page.content %>
+  </div>
+</section>
+
+<section class="aroma-detail-grid">
+  <% aromas.forEach((aroma, index) => { %>
+    <% const related = products.find((product) => product.taxonomy && product.taxonomy.aroma_id === aroma.id); %>
+    <article class="aroma-detail" id="<%= aroma.id %>">
+      <span class="aroma-index"><%= String(index + 1).padStart(2, '0') %></span>
+      <p class="eyebrow">凤凰单枞香型</p>
+      <h2><%= aroma.name %></h2>
+      <p><%= aroma.profile %></p>
+      <ul class="tag-list">
+        <% (aroma.tags || []).forEach((tag) => { %><li><%= tag %></li><% }); %>
+      </ul>
+      <% if (related) { %>
+        <a class="text-link" href="<%- url_for(related.path) %>">查看关联茶品<span aria-hidden="true">→</span></a>
+      <% } %>
+    </article>
+  <% }); %>
+</section>
+
+<section class="consult-band section-contained">
+  <div>
+    <p class="eyebrow">Taste Guidance</p>
+    <h2>香型相近，实际滋味仍会因批次而变化</h2>
+    <p>选择时可以同时说明常喝的茶、偏好的香气、能否接受焙火感，以及日常使用的器具。</p>
+  </div>
+  <a class="button light" href="<%- url_for('/contact/?topic=aroma') %>">咨询香型选择</a>
+</section>

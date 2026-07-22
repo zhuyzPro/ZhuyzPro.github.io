@@ -1,0 +1,19 @@
+<footer class="site-footer" id="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand footer-brand" href="<%- url_for('/') %>">
+        <span class="brand-mark"><%= theme.brand.mark %></span>
+        <span>
+          <strong><%= theme.brand.name %></strong>
+          <small><%= theme.brand.subtitle %></small>
+        </span>
+      </a>
+      <p><%= theme.footer.note %></p>
+    </div>
+    <nav aria-label="页脚链接">
+      <% (theme.footer.links || []).forEach((item) => { %>
+        <a href="<%- url_for(item.url) %>"><%= item.label %></a>
+      <% }); %>
+    </nav>
+  </div>
+</footer>

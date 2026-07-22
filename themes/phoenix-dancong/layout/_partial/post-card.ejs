@@ -1,0 +1,13 @@
+<article class="post-card">
+  <a href="<%- url_for(post.path) %>">
+    <% if (post.cover && post.cover.src) { %>
+      <img src="<%- url_for(post.cover.src) %>" alt="<%= post.cover.alt || post.title %>" />
+    <% } %>
+    <div>
+      <p class="tag"><%= post.categories && post.categories.length ? post.categories.data[0].name : '茶知识' %></p>
+      <h3><%= post.title %></h3>
+      <p><%= post.description || post.excerpt || '' %></p>
+      <span class="card-action">阅读全文 <span aria-hidden="true">→</span></span>
+    </div>
+  </a>
+</article>

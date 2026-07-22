@@ -1,0 +1,64 @@
+<% const origins = (site.data.origins || []).filter((item) => item.status === 'published'); %>
+<% const sites = (site.data.sites || []).filter((item) => item.status === 'published'); %>
+<% const process = site.data.process || []; %>
+<section class="page-hero editorial-hero">
+  <p class="eyebrow">Origin & Craft</p>
+  <h1><%= page.title %></h1>
+  <p><%= page.description %></p>
+</section>
+
+<section class="origin-editorial">
+  <figure>
+    <img src="<%- url_for('/images/origin-mountain.png') %>" alt="凤凰山产地环境" />
+  </figure>
+  <div class="prose">
+    <%- page.content %>
+  </div>
+</section>
+
+<section class="section-block section-contained">
+  <header class="section-heading">
+    <div>
+      <p class="eyebrow">Place Records</p>
+      <h2>产地信息分层记录</h2>
+      <p>行政产地用于说明来源区域，公开山场用于内容组织，更细的采制信息回到具体批次。</p>
+    </div>
+  </header>
+  <div class="origin-record-grid">
+    <% origins.forEach((origin) => { %>
+      <article>
+        <p class="tag">行政产地</p>
+        <h3><%= origin.name %></h3>
+        <p><%= origin.note %></p>
+      </article>
+    <% }); %>
+    <% sites.forEach((item) => { %>
+      <article>
+        <p class="tag">公开片区</p>
+        <h3><%= item.name %></h3>
+        <p><%= item.note %></p>
+      </article>
+    <% }); %>
+  </div>
+</section>
+
+<section class="process-section">
+  <div class="section-contained">
+    <header class="section-heading section-heading-light">
+      <div>
+        <p class="eyebrow">Making Process</p>
+        <h2>从鲜叶到茶汤的主要环节</h2>
+        <p>工艺名称用于理解过程，具体程度和结果仍以每个批次的记录为准。</p>
+      </div>
+    </header>
+    <ol class="process-grid">
+      <% process.forEach((step, index) => { %>
+        <li>
+          <span><%= String(index + 1).padStart(2, '0') %></span>
+          <h3><%= step.name %></h3>
+          <p><%= step.note %></p>
+        </li>
+      <% }); %>
+    </ol>
+  </div>
+</section>

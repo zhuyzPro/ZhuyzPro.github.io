@@ -1,0 +1,24 @@
+{
+  "name": "phoenix-dancong-blog",
+  "private": true,
+  "version": "0.1.0",
+  "description": "凤凰单枞茶品、香型、产地工艺与冲泡知识展示站",
+  "hexo": {
+    "version": "8.1.2"
+  },
+  "scripts": {
+    "clean": "node ./node_modules/hexo-cli/bin/hexo clean",
+    "dev": "node ./node_modules/hexo-cli/bin/hexo server -p 4000",
+    "generate": "node ./node_modules/hexo-cli/bin/hexo generate",
+    "build": "npm run clean && npm run generate"
+  },
+  "devDependencies": {
+    "hexo": "8.1.2",
+    "hexo-cli": "4.3.2",
+    "hexo-renderer-ejs": "2.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-server": "3.0.0",
+    "prettier": "3.9.5",
+    "sharp": "0.35.3"
+  }
+}
