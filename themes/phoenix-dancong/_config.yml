@@ -22,6 +22,11 @@ quick_actions:
   search: /search/
 
 home:
+  notice:
+    label: 本季茶事
+    text: 2026 春茶展示批次已整理，香型、山场、焙火与冲泡参数均按批次说明。
+    link_label: 查看茶品图鉴
+    link_url: /products/
   hero:
     eyebrow: 潮州凤凰山 · 单枞茶事
     title: 凤凰单枞
@@ -38,6 +43,15 @@ home:
       - 真实批次
       - 香型脉络
       - 产地工艺
+  opening:
+    aroma_eyebrow: Begin With Aroma
+    aroma_title: 循香识茶
+    aroma_copy: 先找到熟悉的香气方向，再回到具体批次理解山场、焙火与汤感。
+    aroma_link: 进入香型百科
+    season_eyebrow: Spring Collection
+    season_title: 2026 春茶展示档案
+    season_copy: 当前页面只呈现已经整理并可核对的批次资料，不用库存、销量和稀缺话术替代茶本身。
+    season_link: 浏览本季茶品
   pathways:
     - kicker: Tea Collection
       title: 茶品图鉴
@@ -55,6 +69,20 @@ home:
       title: 冲泡指南
       desc: 按器具、投茶量、水温和逐泡时间给出建议。
       url: /brewing/
+  sidebar:
+    brand_eyebrow: Phoenix Mountain Notes
+    brand_title: 把一泡茶说明白
+    brand_copy: 本站围绕真实展示批次，持续整理香型、产地、工艺、品饮与冲泡记录。先提供足够信息，再承接具体咨询。
+    archive_title: 快速查阅
+    batch_eyebrow: Batch Record
+    batch_title: 每款茶都有独立批次页
+    batch_copy: 产品编号用于对应批次、品鉴和冲泡资料，不是订单号，也不代表库存状态。
+    batch_link: 了解批次展示方法
+    batch_url: /articles/batch-based-product-display/
+    consultation_eyebrow: Tea Consultation
+    consultation_title: 不确定怎么选？
+    consultation_copy: 说说你偏好的香气、茶汤浓淡和日常器具，我们再从具体批次开始说明。
+    consultation_link: 联系咨询
   sections:
     products:
       eyebrow: Tea Collection
@@ -75,6 +103,12 @@ home:
       image: /images/origin-mountain.png
       link_label: 阅读产地与工艺
       link_url: /origins/
+    process:
+      eyebrow: Making Process
+      title: 五个采制环节，逐步形成一泡茶的表达
+      copy: 工艺不是装饰性的名词。每一步都会影响后续香气、汤感与稳定度，因此按环节独立说明。
+      link_label: 查看完整工艺说明
+      link_url: /origins/#process
     brewing:
       eyebrow: Brewing
       title: 先从稳定参数开始，再根据一泡茶调整
@@ -87,6 +121,23 @@ home:
       copy: 用文章展开香型、批次、工艺与日常冲泡中的具体问题。
       link_label: 阅读全部文章
       link_url: /knowledge/
+    principles:
+      eyebrow: Documentation Standard
+      title: 我们如何说明一款凤凰单枞
+      copy: 高级感不能代替事实。每个页面都应让访客知道资料来自哪里、哪些已经确认、哪些仍需按批次判断。
+      items:
+        - number: "01"
+          title: 真实批次
+          desc: 茶品以独立编号对应公开资料，避免把不同年份与工艺状态混在一起。
+        - number: "02"
+          title: 信息边界
+          desc: 行政产地、展示山场与批次记录分层表达，不使用无法核验的绝对化说法。
+        - number: "03"
+          title: 可执行参数
+          desc: 冲泡建议给出器具、投茶量、水温与逐泡时间，并说明调整方向。
+        - number: "04"
+          title: 具体咨询
+          desc: 咨询围绕香型、批次与使用场景展开，不用模糊话术代替产品说明。
   contact:
     eyebrow: Personal Consultation
     title: 不确定从哪款开始，可以先说说你的口味
