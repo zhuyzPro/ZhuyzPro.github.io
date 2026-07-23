@@ -1,5 +1,8 @@
 <% const aroma = product.taxonomy && find_aroma(product.taxonomy.aroma_id); %>
 <% const origin = product.origin && find_origin(product.origin.origin_id); %>
+<% const plant = product.taxonomy && find_plant_material(product.taxonomy.plant_material_id); %>
+<% const pricing = site.data.pricing || {}; %>
+<% const priceItem = (pricing.items || []).find((item) => item.product_id === product.product_id); %>
 <article class="product-card">
   <a class="product-card-link" href="<%- url_for(product.path) %>">
     <% if (product.cover && product.cover.src) { %>
@@ -11,7 +14,8 @@
       <p><%= product.summary || product.description || '' %></p>
       <dl>
         <div><dt>展示批次</dt><dd><%= product.product_id %></dd></div>
-        <div><dt>产地</dt><dd><%= origin ? origin.town || origin.name : '待复核' %></dd></div>
+        <div><dt>品种/株系</dt><dd><%= plant ? plant.name : '待复核' %></dd></div>
+        <div><dt>价格</dt><dd><%= priceItem && priceItem.status === 'confirmed' ? '已发布' : '待确认' %></dd></div>
       </dl>
       <span class="card-action">查看茶品详情 <span aria-hidden="true">→</span></span>
     </div>

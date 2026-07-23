@@ -1,0 +1,82 @@
+<% const products = published_products(); %>
+<% const pricing = site.data.pricing || {}; %>
+<section class="page-hero editorial-hero">
+  <p class="eyebrow">Price &amp; Format</p>
+  <h1><%= page.title %></h1>
+  <p><%= page.description %></p>
+</section>
+
+<section class="pricing-page section-contained">
+  <div class="pricing-notice">
+    <div>
+      <p class="eyebrow">Publishing Rule</p>
+      <h2>价格绑定具体批次与规格</h2>
+      <p><%= pricing.notice %></p>
+    </div>
+    <div class="pricing-review">
+      <span>最近检查</span>
+      <strong><%= pricing.last_reviewed || '待补充' %></strong>
+    </div>
+  </div>
+
+  <div class="pricing-table-wrap">
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th scope="col">茶品</th>
+          <th scope="col">香型</th>
+          <th scope="col">规格</th>
+          <th scope="col">价格</th>
+          <th scope="col">状态</th>
+          <th scope="col"><span class="sr-only">操作</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% (pricing.items || []).forEach((item) => { %>
+          <% const product = products.find((entry) => entry.product_id === item.product_id); %>
+          <% const aroma = product && product.taxonomy && find_aroma(product.taxonomy.aroma_id); %>
+          <% if (product) { %>
+            <% (item.specs || []).forEach((spec, index) => { %>
+              <tr>
+                <% if (index === 0) { %><th scope="row" rowspan="<%= item.specs.length %>"><a href="<%- url_for(product.path) %>"><%= product.title %></a><small><%= product.product_id %></small></th><td rowspan="<%= item.specs.length %>"><%= aroma ? aroma.name : '待复核' %></td><% } %>
+                <td><%= spec.label %></td>
+                <td class="price-value"><%= item.status === 'confirmed' && spec.price ? `¥${spec.price}` : '待确认' %></td>
+                <td><span class="price-status <%= item.status === 'confirmed' && spec.price ? 'is-confirmed' : '' %>"><%= item.status === 'confirmed' && spec.price ? '已发布' : '待确认' %></span></td>
+                <% if (index === 0) { %><td rowspan="<%= item.specs.length %>"><a class="text-link" href="<%- url_for(`/contact/?topic=product-${product.product_id}`) %>">咨询<span aria-hidden="true">→</span></a></td><% } %>
+              </tr>
+            <% }); %>
+          <% } %>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pricing-mobile-list">
+    <% (pricing.items || []).forEach((item) => { %>
+      <% const product = products.find((entry) => entry.product_id === item.product_id); %>
+      <% const aroma = product && product.taxonomy && find_aroma(product.taxonomy.aroma_id); %>
+      <% if (product) { %>
+        <article class="price-card">
+          <div class="price-card-heading">
+            <div><p class="tag"><%= aroma ? aroma.name : '凤凰单枞' %></p><h2><%= product.title %></h2><small><%= product.product_id %></small></div>
+            <a class="text-link" href="<%- url_for(`/contact/?topic=product-${product.product_id}`) %>" aria-label="咨询<%= product.title %>">咨询<span aria-hidden="true">→</span></a>
+          </div>
+          <dl>
+            <% (item.specs || []).forEach((spec) => { %>
+              <div><dt><%= spec.label %></dt><dd><%= item.status === 'confirmed' && spec.price ? `¥${spec.price}` : '待确认' %></dd></div>
+            <% }); %>
+          </dl>
+        </article>
+      <% } %>
+    <% }); %>
+  </div>
+</section>
+
+<section class="consult-band section-contained">
+  <div>
+    <p class="eyebrow">Price Consultation</p>
+    <h2>需要按预算和规格筛选？</h2>
+    <p>告诉我们预算、饮用场景和偏好的香型，确认后的价格会对应到具体批次与包装规格。</p>
+  </div>
+  <a class="button light" href="<%- url_for('/contact/?topic=product') %>">咨询价格与规格</a>
+</section>

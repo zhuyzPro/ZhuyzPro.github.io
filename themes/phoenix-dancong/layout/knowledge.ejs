@@ -4,6 +4,22 @@
   <h1><%= page.title %></h1>
   <p><%= page.description %></p>
 </section>
+<section class="knowledge-guides section-contained">
+  <header class="section-heading">
+    <div>
+      <p class="eyebrow">Start Here</p>
+      <h2>先解决选择，再深入阅读</h2>
+      <p>从香型、价格、冲泡和文章四条路径进入，降低第一次查阅的理解成本。</p>
+    </div>
+  </header>
+  <div class="knowledge-guide-grid">
+    <a href="<%- url_for('/aromas/') %>"><span>01</span><strong>十大香型</strong><small>先建立气味坐标</small></a>
+    <a href="<%- url_for('/varieties/') %>"><span>02</span><strong>茶树品种</strong><small>区分品种与香型</small></a>
+    <a href="<%- url_for('/pricing/') %>"><span>03</span><strong>价格与规格</strong><small>按批次查看状态</small></a>
+    <a href="<%- url_for('/brewing/') %>"><span>04</span><strong>冲泡指南</strong><small>从参数开始试茶</small></a>
+    <a href="<%- url_for('/products/') %>"><span>05</span><strong>茶品图鉴</strong><small>回到具体产品页</small></a>
+  </div>
+</section>
 <section class="section-block section-contained">
   <div class="post-list">
     <% posts.forEach((post) => { %>

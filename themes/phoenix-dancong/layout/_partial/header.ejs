@@ -8,8 +8,12 @@
   </a>
   <nav class="site-nav" id="site-navigation" aria-label="主导航">
     <% (theme.navigation || []).forEach((item) => { %>
-      <% const isActive = page.path && page.path.startsWith(String(item.url).replace(/^\/|\/$/g, '')); %>
-      <a class="<%= isActive ? 'is-active' : '' %>" href="<%- url_for(item.url) %>"><%= item.label %></a>
+      <% const normalizedUrl = String(item.url || '/'); %>
+      <% const pagePath = String(page.path || ''); %>
+      <% const isHome = normalizedUrl === '/'; %>
+      <% const sectionPath = normalizedUrl.replace(/^\/|\/$/g, ''); %>
+      <% const isActive = isHome ? (page.layout === 'index' || pagePath === 'index.html') : pagePath.startsWith(sectionPath); %>
+      <a class="<%= isActive ? 'is-active' : '' %>" href="<%- url_for(item.url) %>"<% if (isActive) { %> aria-current="page"<% } %>><%= item.label %></a>
     <% }); %>
   </nav>
   <div class="header-actions">

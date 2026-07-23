@@ -1,23 +1,110 @@
+- id: gui-hua-xiang
+  name: 桂花香
+  order: 1
+  major: true
+  status: published
+  profile: 以桂花样的甜香线索作为识别入口，实际表现仍需结合具体批次与焙火。
+  tags:
+    - 桂花样甜香
+    - 清甜
+    - 香气识别
+- id: huang-zhi-xiang
+  name: 黄枝香
+  aliases:
+    - 黄栀香
+  order: 2
+  major: true
+  status: published
+  profile: 常见写法有黄栀香，香气方向偏清雅，可用来观察香型、焙火与汤感的关系。
+  tags:
+    - 黄栀花样
+    - 清雅
+    - 中火表达
+- id: zhi-lan-xiang
+  name: 芝兰香
+  order: 3
+  major: true
+  status: published
+  profile: 以兰花样的清幽香气作为感官线索，宜回到具体批次判断香气是否清晰持久。
+  tags:
+    - 兰花样
+    - 清幽
+    - 细香
 - id: mi-lan-xiang
   name: 蜜兰香
+  order: 4
+  major: true
   status: published
-  profile: 花蜜香清晰，适合作为凤凰单枞入门时较容易识别的香气方向。
+  profile: 花蜜香线索较容易被识别，适合作为初次理解凤凰单枞香型的入口方向。
   tags:
     - 花蜜感
     - 清扬
     - 入口友好
-- id: huang-zhi-xiang
-  name: 黄枝香
+- id: xing-ren-xiang
+  name: 杏仁香
+  order: 5
+  major: true
   status: published
-  profile: 香气偏清雅，适合用来展示香型、焙火和山场之间的差异。
+  profile: 以熟杏仁样的香气联想建立识别坐标，不将香型名称直接等同于品质等级。
   tags:
-    - 清雅
+    - 杏仁样
+    - 熟香
+    - 汤感对照
+- id: jiang-hua-xiang
+  name: 姜花香
+  order: 6
+  major: true
+  status: published
+  profile: 以姜花样的香气作为命名线索，实际香气会随鲜叶、做青、焙火和冲泡变化。
+  tags:
+    - 姜花样
+    - 清鲜
+    - 批次判断
+- id: ye-lai-xiang
+  name: 夜来香
+  order: 7
+  major: true
+  status: published
+  profile: 以夜来香样的浓郁花香作为感官线索，适合结合杯盖香与汤香一起观察。
+  tags:
     - 花香
-    - 中火
+    - 浓郁
+    - 杯盖香
+- id: rou-gui-xiang
+  name: 肉桂香
+  order: 8
+  major: true
+  status: published
+  profile: 以肉桂样的辛甜香气作为识别方向，焙火程度会影响香气与汤感的呈现方式。
+  tags:
+    - 辛甜香
+    - 焙火对照
+    - 汤感
+- id: mo-li-xiang
+  name: 茉莉香
+  order: 9
+  major: true
+  status: published
+  profile: 以茉莉花样的清甜香气作为识别线索，需结合具体批次避免只凭名称判断。
+  tags:
+    - 茉莉花样
+    - 清甜
+    - 香气线索
+- id: yu-lan-xiang
+  name: 玉兰香
+  order: 10
+  major: true
+  status: published
+  profile: 以玉兰样的柔和花香作为识别入口，适合和芝兰香、黄枝香做对照阅读。
+  tags:
+    - 玉兰样
+    - 柔和
+    - 花香对照
 - id: yin-hua-xiang
   name: 银花香
+  group: other
   status: published
-  profile: 香气层次较细，适合承接冲泡建议和品鉴记录内容。
+  profile: 作为其他常见香型保留，用于承接现有展示批次和逐泡品鉴记录。
   tags:
     - 细腻
     - 清甜

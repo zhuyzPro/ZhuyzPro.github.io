@@ -5,16 +5,18 @@ brand:
   share_image: /images/hero-tea-table.png
 
 navigation:
+  - label: 首页
+    url: /
   - label: 茶品
     url: /products/
-  - label: 香型
+  - label: 十大香型
     url: /aromas/
-  - label: 产地与工艺
-    url: /origins/
+  - label: 茶树品种
+    url: /varieties/
+  - label: 价格
+    url: /pricing/
   - label: 茶知识
     url: /knowledge/
-  - label: 冲泡
-    url: /brewing/
   - label: 联系
     url: /contact/
 
@@ -149,6 +151,10 @@ footer:
   links:
     - label: 茶品图鉴
       url: /products/
+    - label: 价格说明
+      url: /pricing/
+    - label: 十大香型
+      url: /aromas/
     - label: 茶知识
       url: /knowledge/
     - label: 联系咨询

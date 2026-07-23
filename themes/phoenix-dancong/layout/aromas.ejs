@@ -1,4 +1,4 @@
-<% const aromas = (site.data.aromas || []).filter((item) => item.status === 'published'); %>
+<% const aromas = (site.data.aromas || []).filter((item) => item.status === 'published').sort((left, right) => Number(left.order || 99) - Number(right.order || 99)); %>
 <% const products = published_products(); %>
 <section class="page-hero editorial-hero">
   <p class="eyebrow">Aroma Library</p>
@@ -17,8 +17,9 @@
     <% const related = products.find((product) => product.taxonomy && product.taxonomy.aroma_id === aroma.id); %>
     <article class="aroma-detail" id="<%= aroma.id %>">
       <span class="aroma-index"><%= String(index + 1).padStart(2, '0') %></span>
-      <p class="eyebrow">凤凰单枞香型</p>
+      <p class="eyebrow"><%= aroma.major ? '十大香型' : '其他常见香型' %></p>
       <h2><%= aroma.name %></h2>
+      <% if (aroma.aliases && aroma.aliases.length) { %><p class="aroma-alias">常见异名：<%= aroma.aliases.join('、') %></p><% } %>
       <p><%= aroma.profile %></p>
       <ul class="tag-list">
         <% (aroma.tags || []).forEach((tag) => { %><li><%= tag %></li><% }); %>

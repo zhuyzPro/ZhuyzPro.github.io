@@ -1,13 +1,38 @@
 <% const products = published_products(); %>
+<% const aromas = (site.data.aromas || []).filter((item) => item.status === 'published').sort((left, right) => Number(left.order || 99) - Number(right.order || 99)); %>
 <section class="page-hero editorial-hero">
   <p class="eyebrow">Tea Collection</p>
   <h1><%= page.title %></h1>
   <p><%= page.description %></p>
 </section>
+<section class="taxonomy-intro product-collection-intro">
+  <div class="prose">
+    <h2>先按香型找到方向，再看具体品种与批次</h2>
+    <p>香型是成茶的感官与命名维度，不等同于茶树品种，也不直接代表品质等级。产品页会继续列出品种/株系、焙火、品鉴、冲泡和价格状态。</p>
+  </div>
+</section>
+<section class="aroma-index-band section-contained" aria-label="十大香型入口">
+  <header class="section-heading">
+    <div>
+      <p class="eyebrow">Aroma Index</p>
+      <h2>十大香型入口</h2>
+      <p>先从熟悉的气味联想开始，再回到具体茶品判断实际表现。</p>
+    </div>
+    <div class="section-links">
+      <a class="text-link" href="<%- url_for('/aromas/') %>">查看完整香型百科<span aria-hidden="true">→</span></a>
+      <a class="text-link" href="<%- url_for('/varieties/') %>">查看茶树品种与株系<span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+  <div class="aroma-index-list">
+    <% aromas.filter((aroma) => aroma.major).forEach((aroma) => { %>
+      <a href="<%- url_for(`/aromas/#${aroma.id}`) %>"><span><%= String(aroma.order).padStart(2, '0') %></span><strong><%= aroma.name %></strong></a>
+    <% }); %>
+  </div>
+</section>
 <section class="section-block section-contained">
   <header class="catalog-note">
     <p>当前收录 <strong><%= products.length %></strong> 个展示批次</p>
-    <span>按人工维护优先级与更新时间排列</span>
+    <span>价格按规格逐项确认后发布</span>
   </header>
   <div class="card-grid product-index-grid">
     <% products.forEach((product) => { %>

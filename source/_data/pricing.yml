@@ -1,0 +1,25 @@
+currency: CNY
+last_reviewed: 2026-07-23
+notice: 价格与规格需要以实际库存、包装和批次确认后发布；未确认前显示为待确认，不用演示数字代替正式售价。
+items:
+  - product_id: PDC-2026-SPRING-MLX
+    status: pending
+    specs:
+      - label: 50g 试饮装
+        price:
+      - label: 100g 常规装
+        price:
+  - product_id: PDC-2026-SPRING-HZX
+    status: pending
+    specs:
+      - label: 50g 试饮装
+        price:
+      - label: 100g 常规装
+        price:
+  - product_id: PDC-2026-SPRING-YHX
+    status: pending
+    specs:
+      - label: 50g 试饮装
+        price:
+      - label: 100g 常规装
+        price:

@@ -2,14 +2,14 @@
   name: 青心乌叶
   status: published
   type: 株系
-  note: 仅作为产品展示中的品种/株系字段，不据此推定香型或品质。
+  note: 当前作为蜜兰香展示批次的品种/株系字段收录，用于补充批次资料，不据此推定香型或品质。
 - id: huang-dan
   name: 黄旦
   status: published
   type: 品种
-  note: 用于黄枝香展示批次的受控字段。
+  note: 当前作为黄枝香展示批次的品种字段收录，需结合具体批次、焙火和品鉴记录理解。
 - id: song-zhong-no-1
   name: 宋种一号
   status: published
   type: 株系
-  note: 用于银花香展示批次的资料字段。
+  note: 当前作为银花香展示批次的株系字段收录，页面只说明已公开资料范围。
