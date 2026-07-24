@@ -6,24 +6,51 @@
   <p><%= page.description %></p>
 </section>
 
+<section class="variety-map section-contained" aria-label="当前收录茶树品种与株系">
+  <% plants.forEach((plant, index) => { %>
+    <% const related = products.filter((product) => product.taxonomy && product.taxonomy.plant_material_id === plant.id); %>
+    <% const relatedAromas = related.map((product) => product.taxonomy && find_aroma(product.taxonomy.aroma_id)).filter(Boolean); %>
+    <a href="<%- url_for(`/varieties/#${plant.id}`) %>">
+      <span><%= String(index + 1).padStart(2, '0') %></span>
+      <p class="eyebrow"><%= plant.type %></p>
+      <h2><%= plant.name %></h2>
+      <p><%= relatedAromas.length ? `关联香型：${relatedAromas.map((aroma) => aroma.name).join('、')}` : '关联香型待补充' %></p>
+    </a>
+  <% }); %>
+</section>
+
 <section class="taxonomy-intro variety-intro">
   <div class="prose">
     <%- page.content %>
   </div>
 </section>
 
+<section class="variety-layer-guide section-contained" aria-label="品种、香型与批次的阅读层级">
+  <div><span>01</span><strong>茶树资源</strong><small>说明来源背景</small></div>
+  <div><span>02</span><strong>香型命名</strong><small>建立气味方向</small></div>
+  <div><span>03</span><strong>具体批次</strong><small>固定当前茶品</small></div>
+</section>
+
 <section class="variety-detail-grid section-contained">
   <% plants.forEach((plant, index) => { %>
     <% const related = products.filter((product) => product.taxonomy && product.taxonomy.plant_material_id === plant.id); %>
+    <% const relatedAromas = related.map((product) => product.taxonomy && find_aroma(product.taxonomy.aroma_id)).filter(Boolean); %>
     <article class="variety-detail" id="<%= plant.id %>">
       <span class="aroma-index"><%= String(index + 1).padStart(2, '0') %></span>
       <p class="eyebrow"><%= plant.type %></p>
       <h2><%= plant.name %></h2>
       <p><%= plant.note %></p>
+      <% if (plant.role) { %><p class="variety-role"><%= plant.role %></p><% } %>
       <dl class="variety-facts">
         <div><dt>当前收录批次</dt><dd><%= related.length %></dd></div>
-        <div><dt>资料用途</dt><dd>补充批次背景</dd></div>
+        <div><dt>关联香型</dt><dd><%= relatedAromas.length ? relatedAromas.map((aroma) => aroma.name).join('、') : '待补充' %></dd></div>
+        <div><dt>资料用途</dt><dd>批次背景</dd></div>
       </dl>
+      <% if (plant.reading && plant.reading.length) { %>
+        <ul class="variety-reading-list">
+          <% plant.reading.forEach((line) => { %><li><%= line %></li><% }); %>
+        </ul>
+      <% } %>
       <% if (related.length) { %>
         <div class="variety-product-links">
           <% related.forEach((product) => { %><a class="text-link" href="<%- url_for(product.path) %>"><%= product.title %><span aria-hidden="true">→</span></a><% }); %>
@@ -38,7 +65,7 @@
     <p class="eyebrow">Reading Boundary</p>
     <h2>不要把品种、香型和等级混为一谈</h2>
   </div>
-  <p>同一类茶树资源可能呈现不同的香气表达；同一香型也可能出现于不同的批次状态。产品详情页的焙火、品鉴、冲泡与价格信息才用于说明当前展示茶。</p>
+  <p>同一类茶树资源可能呈现不同的香气表达；同一香型也可能出现于不同的批次状态。产品详情页的焙火、品鉴、冲泡与价格信息才用于说明当前展示茶。需要系统理解时，可以先阅读<a class="inline-link" href="<%- url_for('/articles/phoenix-dancong-plant-material-aroma-batch/') %>">品种/株系、香型与批次的区别</a>。</p>
 </section>
 
 <section class="consult-band section-contained">
