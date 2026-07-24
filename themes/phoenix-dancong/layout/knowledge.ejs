@@ -29,7 +29,7 @@
     <aside class="knowledge-feature" aria-label="精选茶知识文章">
       <a class="knowledge-feature-main" href="<%- url_for(latest.path) %>">
         <% if (latest.cover && latest.cover.src) { %>
-          <img src="<%- url_for(latest.cover.src) %>" alt="<%= latest.cover.alt || latest.title %>" loading="lazy" decoding="async" />
+          <img src="<%- url_for(latest.cover.src) %>" alt="<%= latest.cover.alt || latest.title %>" fetchpriority="high" decoding="async" />
         <% } %>
         <div class="knowledge-feature-body">
           <span><%= latest.categories && latest.categories.length ? latest.categories.data[0].name : '茶知识' %></span>
