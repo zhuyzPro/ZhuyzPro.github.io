@@ -1,26 +1,63 @@
 <% const posts = published_posts(); %>
+<% const featuredPosts = posts.slice(0, 2); %>
 <section class="page-hero editorial-hero">
   <p class="eyebrow">Tea Journal</p>
   <h1><%= page.title %></h1>
   <p><%= page.description %></p>
 </section>
-<section class="knowledge-guides section-contained">
+
+<section class="knowledge-hub section-contained">
+  <div class="knowledge-guides">
+    <header class="section-heading">
+      <div>
+        <p class="eyebrow">Start Here</p>
+        <h2>先解决选择，再深入阅读</h2>
+        <p>从香型、价格、冲泡和批次资料进入，降低第一次查阅的理解成本。</p>
+      </div>
+    </header>
+    <div class="knowledge-guide-grid">
+      <a href="<%- url_for('/aromas/') %>"><span>01</span><strong>十大香型</strong><small>先建立气味坐标</small></a>
+      <a href="<%- url_for('/varieties/') %>"><span>02</span><strong>茶树品种</strong><small>区分品种与香型</small></a>
+      <a href="<%- url_for('/pricing/') %>"><span>03</span><strong>价格与规格</strong><small>按批次查看状态</small></a>
+      <a href="<%- url_for('/brewing/') %>"><span>04</span><strong>冲泡指南</strong><small>从参数开始试茶</small></a>
+      <a href="<%- url_for('/products/') %>"><span>05</span><strong>茶品图鉴</strong><small>回到具体产品页</small></a>
+    </div>
+  </div>
+
+  <% if (featuredPosts.length) { %>
+    <% const latest = featuredPosts[0]; %>
+    <aside class="knowledge-feature" aria-label="精选茶知识文章">
+      <a class="knowledge-feature-main" href="<%- url_for(latest.path) %>">
+        <% if (latest.cover && latest.cover.src) { %>
+          <img src="<%- url_for(latest.cover.src) %>" alt="<%= latest.cover.alt || latest.title %>" loading="lazy" decoding="async" />
+        <% } %>
+        <div class="knowledge-feature-body">
+          <span><%= latest.categories && latest.categories.length ? latest.categories.data[0].name : '茶知识' %></span>
+          <h2><%= latest.title %></h2>
+          <p><%= latest.description || latest.excerpt || '' %></p>
+          <small><%= date(latest.updated || latest.date, 'YYYY.MM.DD') %></small>
+        </div>
+      </a>
+      <% if (featuredPosts[1]) { %>
+        <% const nextPost = featuredPosts[1]; %>
+        <a class="knowledge-feature-link" href="<%- url_for(nextPost.path) %>">
+          <span>继续阅读</span>
+          <strong><%= nextPost.title %></strong>
+          <small><%= nextPost.description || '' %></small>
+        </a>
+      <% } %>
+    </aside>
+  <% } %>
+</section>
+
+<section class="section-block section-contained knowledge-archive">
   <header class="section-heading">
     <div>
-      <p class="eyebrow">Start Here</p>
-      <h2>先解决选择，再深入阅读</h2>
-      <p>从香型、价格、冲泡和文章四条路径进入，降低第一次查阅的理解成本。</p>
+      <p class="eyebrow">All Notes</p>
+      <h2>全部茶知识文章</h2>
+      <p>按当前已发布内容整理，后续新增茶品和资料后继续扩展。</p>
     </div>
   </header>
-  <div class="knowledge-guide-grid">
-    <a href="<%- url_for('/aromas/') %>"><span>01</span><strong>十大香型</strong><small>先建立气味坐标</small></a>
-    <a href="<%- url_for('/varieties/') %>"><span>02</span><strong>茶树品种</strong><small>区分品种与香型</small></a>
-    <a href="<%- url_for('/pricing/') %>"><span>03</span><strong>价格与规格</strong><small>按批次查看状态</small></a>
-    <a href="<%- url_for('/brewing/') %>"><span>04</span><strong>冲泡指南</strong><small>从参数开始试茶</small></a>
-    <a href="<%- url_for('/products/') %>"><span>05</span><strong>茶品图鉴</strong><small>回到具体产品页</small></a>
-  </div>
-</section>
-<section class="section-block section-contained">
   <div class="post-list">
     <% posts.forEach((post) => { %>
       <%- partial('_partial/post-card', { post: post }) %>
